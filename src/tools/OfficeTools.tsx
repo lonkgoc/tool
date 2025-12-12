@@ -6,7 +6,7 @@ import * as mammoth from 'mammoth';
 import * as XLSX from 'xlsx';
 import JSZip from 'jszip';
 
-type Operation = 'text2pdf' | 'md2pdf' | 'html2pdf' | 'word2pdf' | 'excel2pdf' | 'ppt2pdf' | 'odt2pdf' | 'info';
+type Operation = 'text2pdf' | 'md2pdf' | 'html2pdf' | 'word2pdf' | 'excel2pdf' | 'ppt2pdf' | 'odt2pdf' | 'rtf2pdf' | 'info';
 
 interface OfficeToolsProps {
   initialMode?: Operation;
@@ -261,6 +261,14 @@ export default function OfficeTools({ initialMode, hideTabs = false }: OfficeToo
           if (!file) throw new Error('No file selected');
           pdfBlob = await odtToPdf(file);
           break;
+        case 'rtf2pdf':
+          // Basic RTF text extraction
+          if (!file) throw new Error('No file selected');
+          const rtfText = await file.text();
+          // Very basic RTF stripper - removes control words/groups
+          const plainText = rtfText.replace(/\\par/g, '\n').replace(/[{}\\].*?/g, '').trim();
+          pdfBlob = await textToPdf(plainText || 'Error reading RTF content');
+          break;
         default:
           throw new Error('Unknown operation');
       }
@@ -294,6 +302,7 @@ export default function OfficeTools({ initialMode, hideTabs = false }: OfficeToo
       case 'excel2pdf': return '.xlsx,.xls,.csv';
       case 'ppt2pdf': return '.pptx';
       case 'odt2pdf': return '.odt';
+      case 'rtf2pdf': return '.rtf';
       default: return '*';
     }
   };
@@ -306,6 +315,7 @@ export default function OfficeTools({ initialMode, hideTabs = false }: OfficeToo
     { id: 'excel2pdf', label: 'Excel → PDF', icon: FileSpreadsheet },
     { id: 'ppt2pdf', label: 'PPT → PDF', icon: Presentation },
     { id: 'odt2pdf', label: 'ODT → PDF', icon: FileText },
+    { id: 'rtf2pdf', label: 'RTF → PDF', icon: FileText },
     { id: 'info', label: 'Info', icon: Info },
   ] as const;
 

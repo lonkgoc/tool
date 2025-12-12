@@ -3,8 +3,13 @@ import { Video, Music, Image, AlertCircle, Download, Loader, Info } from 'lucide
 
 type Operation = 'video-to-gif' | 'gif-maker' | 'info';
 
-export default function MediaTools() {
-  const [activeOp, setActiveOp] = useState<Operation>('gif-maker');
+interface MediaToolsProps {
+  initialOp?: Operation;
+  hideTabs?: boolean;
+}
+
+export default function MediaTools({ initialOp, hideTabs = false }: MediaToolsProps = {}) {
+  const [activeOp, setActiveOp] = useState<Operation>(initialOp || 'gif-maker');
   const [files, setFiles] = useState<File[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -105,21 +110,23 @@ export default function MediaTools() {
         </h2>
 
         {/* Tabs */}
-        <div className="flex gap-2 flex-wrap mb-6">
-          {opConfig.map(({ id, label, icon: Icon }) => (
-            <button
-              key={id}
-              onClick={() => { setActiveOp(id); setResult(null); setError(''); }}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${activeOp === id
-                ? 'bg-purple-500 text-white'
-                : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
-                }`}
-            >
-              <Icon className="w-4 h-4" />
-              {label}
-            </button>
-          ))}
-        </div>
+        {!hideTabs && (
+          <div className="flex gap-2 flex-wrap mb-6">
+            {opConfig.map(({ id, label, icon: Icon }) => (
+              <button
+                key={id}
+                onClick={() => { setActiveOp(id); setResult(null); setError(''); }}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${activeOp === id
+                  ? 'bg-purple-500 text-white'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
+                  }`}
+              >
+                <Icon className="w-4 h-4" />
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Error */}
         {error && (
