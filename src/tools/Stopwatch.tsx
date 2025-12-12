@@ -16,9 +16,9 @@ export default function Stopwatch() {
 
   useEffect(() => {
     if (running) {
-      intervalRef.current = setInterval(() => {
+      intervalRef.current = window.setInterval(() => {
         setTime((prev) => prev + 10);
-      }, 10);
+      }, 10) as unknown as number;
     } else {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -210,10 +210,10 @@ export default function Stopwatch() {
                 <div
                   key={lapItem.number}
                   className={`grid grid-cols-3 gap-2 p-3 rounded-lg transition-colors ${isFastest
-                      ? 'bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700'
-                      : isSlowest
-                        ? 'bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700'
-                        : 'bg-white/50 dark:bg-slate-700/50'
+                    ? 'bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700'
+                    : isSlowest
+                      ? 'bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700'
+                      : 'bg-white/50 dark:bg-slate-700/50'
                     }`}
                 >
                   <span className="text-slate-700 dark:text-slate-300 flex items-center gap-1">
@@ -222,10 +222,10 @@ export default function Stopwatch() {
                     {isSlowest && <span title="Slowest">🐢</span>}
                   </span>
                   <span className={`font-mono font-semibold text-center ${isFastest
-                      ? 'text-green-600 dark:text-green-400'
-                      : isSlowest
-                        ? 'text-red-600 dark:text-red-400'
-                        : 'text-slate-900 dark:text-slate-100'
+                    ? 'text-green-600 dark:text-green-400'
+                    : isSlowest
+                      ? 'text-red-600 dark:text-red-400'
+                      : 'text-slate-900 dark:text-slate-100'
                     }`}>
                     +{formatTime(lapItem.diff)}
                   </span>

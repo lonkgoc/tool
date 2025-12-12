@@ -23,7 +23,7 @@ export default function TypingTest() {
     if (started && !finished && time > 0) {
       const words = input.trim().split(/\s+/).filter(w => w).length;
       setWpm(Math.round((words / time) * 60));
-      
+
       let correct = 0;
       for (let i = 0; i < Math.min(input.length, text.length); i++) {
         if (input[i] === text[i]) correct++;
@@ -34,9 +34,9 @@ export default function TypingTest() {
 
   useEffect(() => {
     if (started && !finished) {
-      intervalRef.current = setInterval(() => {
+      intervalRef.current = window.setInterval(() => {
         setTime(prev => prev + 1);
-      }, 1000);
+      }, 1000) as unknown as number;
     } else {
       if (intervalRef.current) clearInterval(intervalRef.current);
     }
@@ -48,11 +48,11 @@ export default function TypingTest() {
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setInput(value);
-    
+
     if (!started && value.length > 0) {
       setStarted(true);
     }
-    
+
     if (value === text) {
       setFinished(true);
       setStarted(false);

@@ -38,8 +38,15 @@ export default function CompoundInterest() {
   const totalContributed = principal + (monthlyContribution * months);
   const totalInterest = totalFutureValue - totalContributed;
 
+  interface YearlyData {
+    year: number;
+    total: number;
+    contributed: number;
+    interest: number;
+  }
+
   // Generate yearly breakdown
-  const yearlyData = [];
+  const yearlyData: YearlyData[] = [];
   for (let y = 1; y <= years; y++) {
     const fvP = principal * Math.pow(1 + rate / 100 / timesPerYear, timesPerYear * y);
     const m = y * 12;

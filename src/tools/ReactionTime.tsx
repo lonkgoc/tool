@@ -13,14 +13,14 @@ export default function ReactionTime() {
     setWaiting(true);
     setReady(false);
     setReactionTime(null);
-    
+
     const delay = Math.random() * 3000 + 2000; // 2-5 seconds
-    
-    timeoutRef.current = setTimeout(() => {
+
+    timeoutRef.current = window.setTimeout(() => {
       setWaiting(false);
       setReady(true);
       startTimeRef.current = Date.now();
-    }, delay);
+    }, delay) as unknown as number;
   };
 
   const handleClick = () => {
@@ -64,13 +64,12 @@ export default function ReactionTime() {
 
         <div
           onClick={handleClick}
-          className={`h-96 rounded-xl flex items-center justify-center cursor-pointer transition-colors ${
-            waiting
-              ? 'bg-yellow-500 hover:bg-yellow-600'
-              : ready
+          className={`h-96 rounded-xl flex items-center justify-center cursor-pointer transition-colors ${waiting
+            ? 'bg-yellow-500 hover:bg-yellow-600'
+            : ready
               ? 'bg-green-500 hover:bg-green-600'
               : 'bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600'
-          }`}
+            }`}
         >
           {waiting && (
             <div className="text-white text-2xl font-bold">Wait for green...</div>

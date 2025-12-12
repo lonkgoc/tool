@@ -83,7 +83,7 @@ export default function PomodoroTimer() {
 
   useEffect(() => {
     if (running && timeLeft > 0) {
-      intervalRef.current = setInterval(() => {
+      intervalRef.current = window.setInterval(() => {
         setTimeLeft((prev) => {
           if (prev <= 1) {
             setRunning(false);

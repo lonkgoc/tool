@@ -53,7 +53,7 @@ export default function CountdownTimer() {
 
   useEffect(() => {
     if (running && timeLeft > 0) {
-      intervalRef.current = setInterval(() => {
+      intervalRef.current = window.setInterval(() => {
         setTimeLeft((prev) => {
           if (prev <= 1) {
             setRunning(false);
@@ -212,8 +212,8 @@ export default function CountdownTimer() {
 
       {/* Timer Display */}
       <div className={`card text-center relative overflow-hidden ${completed
-          ? 'bg-green-50 dark:bg-green-900/20 border-2 border-green-500'
-          : 'bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20'
+        ? 'bg-green-50 dark:bg-green-900/20 border-2 border-green-500'
+        : 'bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20'
         }`}>
         {/* Progress bar */}
         {(running || isPaused) && (
@@ -224,8 +224,8 @@ export default function CountdownTimer() {
         )}
 
         <div className={`text-6xl font-bold mb-4 font-mono transition-colors ${completed
-            ? 'text-green-600 dark:text-green-400 animate-pulse'
-            : 'text-blue-600 dark:text-blue-400'
+          ? 'text-green-600 dark:text-green-400 animate-pulse'
+          : 'text-blue-600 dark:text-blue-400'
           }`}>
           {timeLeft > 0 || running ? displayTime() : '00:00:00'}
         </div>
