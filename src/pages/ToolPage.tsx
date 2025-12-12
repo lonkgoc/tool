@@ -1,4 +1,6 @@
+import { Suspense } from 'react';
 import { useParams } from 'react-router-dom';
+import { Loader } from 'lucide-react';
 import Layout from '../components/Layout';
 import { getToolBySlug } from '../data/tools';
 import ToolWrapper from '../components/ToolWrapper';
@@ -31,9 +33,15 @@ export default function ToolPage() {
       affiliateLinks={tool.affiliateLinks}
     >
       <ToolWrapper title={tool.name} description={tool.description}>
-        <ToolComponent />
+        <Suspense fallback={
+          <div className="flex flex-col items-center justify-center p-12 space-y-4">
+            <Loader className="w-8 h-8 animate-spin text-blue-500" />
+            <p className="text-slate-500">Loading tool...</p>
+          </div>
+        }>
+          <ToolComponent />
+        </Suspense>
       </ToolWrapper>
     </Layout>
   );
 }
-
