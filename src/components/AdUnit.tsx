@@ -33,7 +33,7 @@ export default function AdUnit({ format = 'rectangle', className = '' }: AdUnitP
         <ins
           className="adsbygoogle"
           style={{ display: 'block' }}
-          data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+          data-ad-client="ca-pub-9433763808225097"
           data-ad-slot={format === 'rectangle' ? '1234567890' : format === 'banner' ? '0987654321' : '1122334455'}
           data-ad-format={format === 'rectangle' ? 'auto' : format === 'banner' ? 'horizontal' : 'fluid'}
           data-full-width-responsive="true"
