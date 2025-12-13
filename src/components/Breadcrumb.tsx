@@ -19,7 +19,12 @@ export default function Breadcrumb({ toolName, category }: BreadcrumbProps) {
       {category && (
         <>
           <ChevronRight className="w-4 h-4 text-slate-400" />
-          <span className="text-slate-600 dark:text-slate-400">{category}</span>
+          <Link
+            to={`/search?category=${encodeURIComponent(category)}`}
+            className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            {category}
+          </Link>
         </>
       )}
       {toolName && (
