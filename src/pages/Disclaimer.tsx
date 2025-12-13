@@ -10,7 +10,7 @@ export default function Disclaimer() {
             General Information
           </h2>
           <p className="text-slate-600 dark:text-slate-400">
-            ToolHub Pro provides free online tools for informational and convenience purposes only. While we strive to
+            Tool260 provides free online tools for informational and convenience purposes only. While we strive to
             ensure accuracy, we make no warranties or representations about the accuracy, completeness, or suitability
             of the tools for any particular purpose.
           </p>
@@ -18,7 +18,7 @@ export default function Disclaimer() {
             No Liability
           </h2>
           <p className="text-slate-600 dark:text-slate-400">
-            ToolHub Pro shall not be liable for any damages arising from the use or inability to use our tools. All
+            Tool260 shall not be liable for any damages arising from the use or inability to use our tools. All
             tools are provided "as is" without warranty of any kind.
           </p>
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100 mt-8 mb-4">
