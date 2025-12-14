@@ -6,9 +6,12 @@ import SearchPage from './pages/SearchPage';
 import Privacy from './pages/Privacy';
 import Disclaimer from './pages/Disclaimer';
 
+import Seo from './components/Seo';
+
 function App() {
   return (
     <SidebarProvider>
+      <Seo />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -6,6 +6,8 @@ import { getToolBySlug } from '../data/tools';
 import ToolWrapper from '../components/ToolWrapper';
 import { getToolComponent } from '../tools/index';
 
+import Seo from '../components/Seo';
+
 export default function ToolPage() {
   const { slug } = useParams<{ slug: string }>();
   const tool = slug ? getToolBySlug(slug) : undefined;
@@ -13,6 +15,7 @@ export default function ToolPage() {
   if (!tool) {
     return (
       <Layout>
+        <Seo title="Tool Not Found" />
         <div className="card text-center">
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-4">Tool Not Found</h1>
           <p className="text-slate-600 dark:text-slate-400">
@@ -32,6 +35,12 @@ export default function ToolPage() {
       category={tool.category}
       affiliateLinks={tool.affiliateLinks}
     >
+      <Seo
+        title={tool.name}
+        description={tool.description}
+        keywords={`${tool.name}, ${tool.category}, free online tool, ${tool.name} online, free ${tool.name}`}
+        canonicalUrl={`https://tool260.com/tools/${tool.slug}`}
+      />
       <ToolWrapper title={tool.name} description={tool.description}>
         <Suspense fallback={
           <div className="flex flex-col items-center justify-center p-12 space-y-4">

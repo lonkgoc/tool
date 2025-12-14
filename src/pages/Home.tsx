@@ -26,15 +26,23 @@ export default function Home() {
           <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass mb-6">
             <Sparkles className="w-4 h-4 text-blue-500" />
             <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
-              260 Free Online Tools
+              Tool260 - Free Online Tools
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            260 Free Online Tools
+            Tool260: Free Online Tools & Converters
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8 max-w-3xl mx-auto">
-            No Sign-Up, No Limits, Forever Free
+            Your all-in-one platform for 260+ free online tools. No sign-up required.
           </p>
+
+          <div className="max-w-3xl mx-auto mb-12 text-slate-600 dark:text-slate-400 prose dark:prose-invert">
+            <p>
+              Welcome to <strong>Tool260</strong>, the best place for <em>free online file converters</em>, image editors, and developer utilities.
+              Whether you need to convert a PDF, resize an image, or minify code, Tool260 provides unlimited access with no registration.
+              Our fast, secure, and privacy-focused tools run directly in your browser.
+            </p>
+          </div>
 
           {/* Search Bar */}
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto mb-8">
@@ -43,7 +51,7 @@ export default function Home() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search 260 tools instantly..."
+                placeholder="Search tools like 'pdf to word' or 'css minifier'..."
                 className="w-full pl-14 pr-6 py-4 text-lg input-field shadow-lg"
                 aria-label="Search tools"
               />
@@ -55,7 +63,7 @@ export default function Home() {
                   <Link
                     key={tool.id}
                     to={`/tools/${tool.slug}`}
-                    className="block px-6 py-4 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-colors border-b border-white/10 dark:border-slate-700/30 last:border-0"
+                    className="block px-6 py-4 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-colors border-b border-white/10 dark:border-slate-700/30 last:border-0 text-left"
                   >
                     <div className="font-semibold text-slate-900 dark:text-slate-100">{tool.name}</div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">{tool.description}</div>

@@ -85,6 +85,13 @@ const toolComponents: Record<string, React.LazyExoticComponent<() => ReactNode>>
   'cost-of-living': lazy(() => import('./CostOfLiving')),
 
   // Text & Code Tools
+  'markdown-editor': lazy(() => import('./MarkdownEditor')),
+  'json-minifier': lazy(() => import('./Minifiers').then(module => ({ default: module.JsonMinifier }))),
+  'css-minifier': lazy(() => import('./Minifiers').then(module => ({ default: module.CssMinifier }))),
+  'javascript-minifier': lazy(() => import('./Minifiers').then(module => ({ default: module.JavascriptMinifier }))),
+  'sql-minifier': lazy(() => import('./Minifiers').then(module => ({ default: module.SqlMinifier }))),
+  'html-minifier': lazy(() => import('./Minifiers').then(module => ({ default: module.HtmlMinifier }))),
+  'xml-minifier': lazy(() => import('./Minifiers').then(module => ({ default: module.XmlMinifier }))),
   'qr-code-generator': lazy(() => import('./QrCodeGenerator')),
   'barcode-generator': lazy(() => import('./BarcodeGenerator')),
   'password-generator': lazy(() => import('./PasswordGenerator')),
