@@ -22,6 +22,31 @@ export const categories = [
 ];
 
 export const tools: Tool[] = [
+  // Homepage Entry - appears in search results for "tool260" variations
+  {
+    id: "0",
+    name: "Tool260 - Free Online Tools & Converters",
+    category: "Productivity & Planning",
+    description: "Tool260.com - Your all-in-one platform for 260+ free online tools including PDF converters, image editors, calculators, generators, and utilities. No sign-up required.",
+    slug: "home",
+    keywords: [
+      "tool260",
+      "tool 260",
+      "tool260.com",
+      "tool 260 com",
+      "free online tools",
+      "online converters",
+      "free tools",
+      "web tools",
+      "online utilities",
+      "free converters",
+      "tool260 website",
+      "260 tools",
+      "all tools",
+      "homepage"
+    ]
+  },
+
   // Productivity & Planning (1-40)
   { id: "1", name: "Advanced Todo List", category: "Productivity & Planning", description: "Create and manage your tasks with advanced features", slug: "advanced-todo-list", keywords: ["todo", "task", "productivity"] },
   { id: "2", name: "Pomodoro Timer", category: "Productivity & Planning", description: "Focus with the Pomodoro Technique", slug: "pomodoro-timer", keywords: ["pomodoro", "timer", "focus"] },
@@ -317,11 +342,29 @@ export const getToolsByCategory = (category: string): Tool[] => {
 };
 
 export const searchTools = (query: string): Tool[] => {
-  const lowerQuery = query.toLowerCase();
-  return tools.filter(tool =>
+  const lowerQuery = query.toLowerCase().trim();
+
+  const results = tools.filter(tool =>
     tool.name.toLowerCase().includes(lowerQuery) ||
     tool.description.toLowerCase().includes(lowerQuery) ||
     tool.keywords.some(kw => kw.toLowerCase().includes(lowerQuery))
   );
+
+  // Prioritize homepage entry for tool260 variations
+  const tool260Variations = ['tool260', 'tool 260', 'tool260.com', 'tool 260 com'];
+  const isSearchingForTool260 = tool260Variations.some(variation =>
+    lowerQuery === variation || lowerQuery.replace(/\s+/g, '') === variation.replace(/\s+/g, '')
+  );
+
+  if (isSearchingForTool260) {
+    // Move homepage entry to the top
+    return results.sort((a, b) => {
+      if (a.id === "0") return -1;
+      if (b.id === "0") return 1;
+      return 0;
+    });
+  }
+
+  return results;
 };
 

@@ -8,8 +8,10 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
-  const featuredTools = tools.slice(0, 8);
-  const filteredTools = searchQuery ? searchTools(searchQuery) : tools;
+  // Filter out homepage entry (id "0") from regular display
+  const actualTools = tools.filter(t => t.id !== "0");
+  const featuredTools = actualTools.slice(0, 8);
+  const filteredTools = searchQuery ? searchTools(searchQuery) : actualTools;
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,7 +64,7 @@ export default function Home() {
                 {filteredTools.slice(0, 10).map((tool) => (
                   <Link
                     key={tool.id}
-                    to={`/tools/${tool.slug}`}
+                    to={tool.slug === 'home' ? '/' : `/tools/${tool.slug}`}
                     className="block px-6 py-4 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-colors border-b border-white/10 dark:border-slate-700/30 last:border-0 text-left"
                   >
                     <div className="font-semibold text-slate-900 dark:text-slate-100">{tool.name}</div>
@@ -79,7 +81,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-8">Browse by Category</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             {categories.map((category) => {
-              const categoryTools = tools.filter(t => t.category === category);
+              const categoryTools = actualTools.filter(t => t.category === category);
               return (
                 <Link
                   key={category}
@@ -106,7 +108,7 @@ export default function Home() {
             {featuredTools.map((tool) => (
               <Link
                 key={tool.id}
-                to={`/tools/${tool.slug}`}
+                to={tool.slug === 'home' ? '/' : `/tools/${tool.slug}`}
                 className="tool-card"
               >
                 <div className="text-3xl mb-3">⚡</div>
@@ -125,10 +127,10 @@ export default function Home() {
         <section>
           <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-8">All Tools</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {tools.map((tool) => (
+            {actualTools.map((tool) => (
               <Link
                 key={tool.id}
-                to={`/tools/${tool.slug}`}
+                to={tool.slug === 'home' ? '/' : `/tools/${tool.slug}`}
                 className="tool-card"
               >
                 <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors text-sm">

@@ -8,10 +8,10 @@ export default function SearchPage() {
   const category = searchParams.get('category') || '';
 
   const results = category
-    ? getToolsByCategory(category)
+    ? getToolsByCategory(category).filter(t => t.id !== "0")
     : query
-    ? searchTools(query)
-    : tools;
+      ? searchTools(query)
+      : tools.filter(t => t.id !== "0");
 
   return (
     <Layout>
@@ -29,7 +29,7 @@ export default function SearchPage() {
           {results.map((tool) => (
             <Link
               key={tool.id}
-              to={`/tools/${tool.slug}`}
+              to={tool.slug === 'home' ? '/' : `/tools/${tool.slug}`}
               className="tool-card"
             >
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
