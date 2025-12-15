@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Sparkles } from 'lucide-react';
 import Layout from '../components/Layout';
+import { Helmet } from 'react-helmet-async';
 import { categories, tools, searchTools } from '../data/tools';
 
 export default function Home() {
@@ -23,6 +24,24 @@ export default function Home() {
   return (
     <Layout>
       <div className="space-y-12">
+        <Helmet>
+          <title>Tool260 - Tool 260 Free Online Tools & Converters</title>
+          <meta name="description" content="Tool 260 - 260 Free Online Tools. No Sign-Up, No Limits, Forever Free. Productivity, Finance, Health, File Converters, and more." />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Tool260",
+              "alternateName": "Tool 260",
+              "url": "https://tool260.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://tool260.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })}
+          </script>
+        </Helmet>
         {/* Hero Section */}
         <section className="text-center py-12 lg:py-20 animate-fade-in">
           <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass mb-6">

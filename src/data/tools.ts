@@ -165,8 +165,8 @@ export const tools: Tool[] = [
 
   // File Converters & Editors (111-180)
   { id: "111", name: "PDF to Text", category: "File Converters & Editors", description: "Extract text from PDF files", slug: "pdf-to-text", keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool260"], affiliateLinks: [{ name: "SmallPDF", url: "https://smallpdf.com", description: "Professional PDF tools" }, { name: "iLovePDF", url: "https://www.ilovepdf.com", description: "All-in-one PDF solution" }] },
-  { id: "112", name: "PDF to Images", category: "File Converters & Editors", description: "Convert PDF pages to images", slug: "pdf-to-images", keywords: ["pdf", "images", "convert"] },
-  { id: "113", name: "Images to PDF", category: "File Converters & Editors", description: "Combine images into PDF", slug: "images-to-pdf", keywords: ["images", "pdf", "combine"] },
+  { id: "112", name: "PDF to Images", category: "File Converters & Editors", description: "Convert PDF pages to images", slug: "pdf-to-images", keywords: ["pdf", "images", "convert", "pdf to img", "pdf to jpg", "pdf to png", "convert pdf to image"] },
+  { id: "113", name: "Images to PDF", category: "File Converters & Editors", description: "Combine images into PDF", slug: "images-to-pdf", keywords: ["images", "pdf", "combine", "img to pdf", "jpg to pdf", "png to pdf", "convert image to pdf", "picture to pdf"] },
   { id: "114", name: "Merge PDFs", category: "File Converters & Editors", description: "Merge multiple PDF files", slug: "merge-pdfs", keywords: ["merge", "pdf", "combine", "join pdf", "combine pdfs online", "tool260"] },
   { id: "115", name: "Split PDF", category: "File Converters & Editors", description: "Split PDF into multiple files", slug: "split-pdf", keywords: ["split", "pdf", "divide"] },
   { id: "116", name: "Compress PDF", category: "File Converters & Editors", description: "Reduce PDF file size", slug: "compress-pdf", keywords: ["compress", "pdf", "size"] },
@@ -182,7 +182,7 @@ export const tools: Tool[] = [
   { id: "142", name: "HTML Minifier", category: "Text & Code Tools", description: "Minify HTML code", slug: "html-minifier", keywords: ["html", "minify", "compress"] },
   { id: "143", name: "XML Minifier", category: "Text & Code Tools", description: "Minify XML code", slug: "xml-minifier", keywords: ["xml", "minify", "compress"] },
 
-  { id: "121", name: "Word to PDF", category: "File Converters & Editors", description: "Convert Word documents to PDF", slug: "word-to-pdf", keywords: ["word", "pdf", "convert", "doc to pdf", "docx to pdf", "convert word to pdf free"] },
+  { id: "121", name: "Word to PDF", category: "File Converters & Editors", description: "Convert Word documents to PDF", slug: "word-to-pdf", keywords: ["word", "pdf", "convert", "doc to pdf", "docx to pdf", "convert word to pdf free", "word 2 pdf"] },
   { id: "122", name: "Excel to PDF", category: "File Converters & Editors", description: "Convert Excel to PDF", slug: "excel-to-pdf", keywords: ["excel", "pdf", "convert"] },
   { id: "123", name: "PPT to PDF", category: "File Converters & Editors", description: "Convert PowerPoint to PDF", slug: "ppt-to-pdf", keywords: ["powerpoint", "pdf", "convert"] },
   { id: "124", name: "HTML to PDF", category: "File Converters & Editors", description: "Convert HTML to PDF", slug: "html-to-pdf", keywords: ["html", "pdf", "convert"] },
