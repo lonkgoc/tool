@@ -57,13 +57,37 @@ export default function Home() {
             Your all-in-one platform for 260+ free online tools. No sign-up required.
           </p>
 
-          <div className="max-w-3xl mx-auto mb-12 text-slate-600 dark:text-slate-400 prose dark:prose-invert">
+          <div className="max-w-4xl mx-auto mb-16 text-slate-600 dark:text-slate-400 text-lg leading-relaxed space-y-6 text-left">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 text-center mb-6">
+              Why Choose Tool260?
+            </h2>
             <p>
-              Welcome to <strong>Tool260</strong>, the best place for <em>free online file converters</em>, image editors, and developer utilities.
-              Whether you need to convert a PDF, resize an image, or minify code, Tool260 provides unlimited access with no registration.
-              Our fast, secure, and privacy-focused tools run directly in your browser.
+              Welcome to <strong>Tool260</strong>, your premier destination for free, high-quality online utilities.
+              We believe that simple tasks shouldn't require complex software or expensive subscriptions.
+              That's why we've built a comprehensive library of <strong>260+ free tools</strong> that run directly in your browser.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
+              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">⚡ Lightning Fast & Secure</h3>
+                <p>
+                  Most of our tools, especially our files converters and image editors, process data locally on your device using advanced client-side technology.
+                  This means your sensitive files never leave your computer, ensuring 100% privacy and blazing fast speeds.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">💎 Completely Free</h3>
+                <p>
+                  No hidden fees, no credit cards, and no "pro" versions. Every tool on Tool260 is free to use without limits.
+                  Whether you need to convert a PDF, minify CSS, or calculate your mortgage payments, it's all here for free.
+                </p>
+              </div>
+            </div>
+            <p className="text-center pt-6">
+              Explore our categories below to find exactly what you need. From <em>developer tools</em> to <em>health calculators</em>,
+              Tool260 works on all devices—mobile, tablet, and desktop.
             </p>
           </div>
+
 
           {/* Search Bar */}
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto mb-8">

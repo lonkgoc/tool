@@ -7,6 +7,8 @@ import ToolWrapper from '../components/ToolWrapper';
 import { getToolComponent } from '../tools/index';
 
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
+import ContentGenerator from '../components/ContentGenerator';
 
 export default function ToolPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -50,6 +52,13 @@ export default function ToolPage() {
         }>
           <ToolComponent />
         </Suspense>
+
+        <ContentGenerator
+          toolName={tool.name}
+          category={tool.category}
+          description={tool.description}
+        />
+        <RelatedTools currentToolSlug={tool.slug} category={tool.category} />
       </ToolWrapper>
     </Layout>
   );
