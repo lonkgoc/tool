@@ -9,40 +9,43 @@ export default function AdUnit({ format = 'rectangle', className = '' }: AdUnitP
   const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (adRef.current && (window as any).adsbygoogle) {
-      try {
-        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-      } catch (e) {
-        console.error('AdSense error:', e);
-      }
-    }
-  }, []);
+    if (adRef.current && format === 'rectangle') {
+      // Clear previous content
+      adRef.current.innerHTML = '';
 
-  const adStyles = {
-    rectangle: 'min-h-[250px] min-w-[300px]',
-    banner: 'min-h-[90px] w-full',
-    infeed: 'min-h-[200px] w-full',
-  };
+      const adConfig = document.createElement('script');
+      adConfig.type = 'text/javascript';
+      adConfig.innerHTML = `
+        atOptions = {
+          'key' : '18a9fd4005f0eb2763390b007dd5612f',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      `;
+
+      const adScript = document.createElement('script');
+      adScript.type = 'text/javascript';
+      adScript.src = 'https://www.highperformanceformat.com/18a9fd4005f0eb2763390b007dd5612f/invoke.js';
+
+      // Adsterra scripts often use document.write which doesn't work well after page load in React.
+      // However, the invoke.js usually looks for the script tag that included it or checks atOptions.
+      // Standard way to embed such third-party scripts in React is creating the element.
+      // NOTE: 'invoke.js' often writes an iframe. Secure iframe options might be needed or it appends to current location.
+
+      adRef.current.appendChild(adConfig);
+      adRef.current.appendChild(adScript);
+    }
+  }, [format]);
 
   return (
-    <div className={`glass rounded-xl p-4 ${className}`}>
+    <div className={`glass rounded-xl p-4 flex justify-center items-center ${className}`}>
       <div
         ref={adRef}
-        className={`${adStyles[format]} flex items-center justify-center text-slate-400 dark:text-slate-600 text-sm`}
+        className="min-h-[250px] min-w-[300px] flex items-center justify-center overflow-hidden"
       >
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-9433763808225097"
-          data-ad-slot={format === 'rectangle' ? '1234567890' : format === 'banner' ? '0987654321' : '1122334455'}
-          data-ad-format={format === 'rectangle' ? 'auto' : format === 'banner' ? 'horizontal' : 'fluid'}
-          data-full-width-responsive="true"
-        />
-        {/* Placeholder for development */}
-        <div className="text-center">
-          <div className="text-xs mb-2">Ad Space</div>
-          <div className="text-xs opacity-50">{format === 'rectangle' ? '300x250' : format === 'banner' ? '728x90' : 'In-feed'}</div>
-        </div>
+        {/* Adsterra Banner (300x250) */}
       </div>
     </div>
   );
