@@ -57,6 +57,10 @@ export default function ToolPage() {
           toolName={tool.name}
           category={tool.category}
           description={tool.description}
+          longDescription={tool.longDescription}
+          howToSteps={tool.howToSteps}
+          features={tool.features}
+          faqs={tool.faqs}
         />
         <RelatedTools currentToolSlug={tool.slug} category={tool.category} />
       </ToolWrapper>

@@ -5,11 +5,25 @@ interface ContentGeneratorProps {
     toolName: string;
     category: string;
     description: string;
+    longDescription?: string;
+    howToSteps?: string[];
+    features?: string[];
+    faqs?: { question: string; answer: string }[];
 }
 
-export default function ContentGenerator({ toolName, category, description }: ContentGeneratorProps) {
-    // Generate content based on category
+export default function ContentGenerator({
+    toolName,
+    category,
+    description,
+    longDescription,
+    howToSteps,
+    features,
+    faqs
+}: ContentGeneratorProps) {
+    // Generate content based on category (Fallback logic)
     const getFeatures = () => {
+        if (features && features.length > 0) return features;
+
         switch (category) {
             case "File Converters & Editors":
                 return [
@@ -48,6 +62,8 @@ export default function ContentGenerator({ toolName, category, description }: Co
     };
 
     const getSteps = () => {
+        if (howToSteps && howToSteps.length > 0) return howToSteps;
+
         if (category.includes("Converter") || category.includes("Editor")) {
             return [
                 "Select or drag & drop your files into the designated area.",
@@ -75,6 +91,25 @@ export default function ContentGenerator({ toolName, category, description }: Co
         }
     };
 
+    const getFaqs = () => {
+        if (faqs && faqs.length > 0) return faqs;
+
+        return [
+            {
+                question: `Is ${toolName} free to use?`,
+                answer: `Yes, ${toolName} is 100% free to use. There are no hidden charges, subscriptions, or limits on usage. You can use it as many times as you like.`
+            },
+            {
+                question: `Is my data safe when using ${toolName}?`,
+                answer: `Absolutely. We prioritize your privacy. All processing for ${toolName} happens locally within your browser. ${category.includes("Converter") || category.includes("Editor") ? " Your files are never uploaded to our servers." : " No data is transmitted to any external server."}`
+            },
+            {
+                question: `Can I use ${toolName} on mobile?`,
+                answer: `Yes, our website is fully responsive. You can access and use ${toolName} seamlessly on smartphones, tablets, and desktop computers.`
+            }
+        ];
+    };
+
     return (
         <article className="mt-12 space-y-12 animate-fade-in text-left">
             {/* About Section */}
@@ -82,10 +117,14 @@ export default function ContentGenerator({ toolName, category, description }: Co
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
                     About {toolName}
                 </h2>
-                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    The <strong>{toolName}</strong> is a powerful, free online utility designed to help you with
-                    {description.toLowerCase()}. Whether you are a professional or a casual user, this tool provides
-                    a seamless experience directly in your browser. {category.includes("Converter") ? "Unlike other tools that upload your files to a server, this tool processes everything locally on your device for maximum privacy and speed." : "It runs entirely on client-side technology, ensuring your data remains private and secure."}
+                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed whitespace-pre-wrap">
+                    {longDescription ? longDescription : (
+                        <>
+                            The <strong>{toolName}</strong> is a powerful, free online utility designed to help you with
+                            {description.toLowerCase()}. Whether you are a professional or a casual user, this tool provides
+                            a seamless experience directly in your browser. {category.includes("Converter") ? "Unlike other tools that upload your files to a server, this tool processes everything locally on your device for maximum privacy and speed." : "It runs entirely on client-side technology, ensuring your data remains private and secure."}
+                        </>
+                    )}
                 </p>
             </section>
 
@@ -131,31 +170,16 @@ export default function ContentGenerator({ toolName, category, description }: Co
                     Frequently Asked Questions
                 </h2>
                 <div className="space-y-6">
-                    <div>
-                        <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">
-                            Is {toolName} free to use?
-                        </h3>
-                        <p className="text-slate-600 dark:text-slate-400">
-                            Yes, {toolName} is 100% free to use. There are no hidden charges, subscriptions, or limits on usage. You can use it as many times as you like.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">
-                            Is my data safe when using {toolName}?
-                        </h3>
-                        <p className="text-slate-600 dark:text-slate-400">
-                            Absolutely. We prioritize your privacy. All processing for {toolName} happens locally within your browser.
-                            {category.includes("Converter") || category.includes("Editor") ? " Your files are never uploaded to our servers." : " No data is transmitted to any external server."}
-                        </p>
-                    </div>
-                    <div>
-                        <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">
-                            Can I use {toolName} on mobile?
-                        </h3>
-                        <p className="text-slate-600 dark:text-slate-400">
-                            Yes, our website is fully responsive. You can access and use {toolName} seamlessly on smartphones, tablets, and desktop computers.
-                        </p>
-                    </div>
+                    {getFaqs().map((faq, index) => (
+                        <div key={index}>
+                            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">
+                                {faq.question}
+                            </h3>
+                            <p className="text-slate-600 dark:text-slate-400">
+                                {faq.answer}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </section>
         </article>

@@ -6,6 +6,10 @@ export interface Tool {
   slug: string;
   keywords: string[];
   affiliateLinks?: { name: string; url: string; description: string }[];
+  longDescription?: string;
+  howToSteps?: string[];
+  features?: string[];
+  faqs?: { question: string; answer: string }[];
 }
 
 export const categories = [
@@ -164,7 +168,43 @@ export const tools: Tool[] = [
   { id: "110", name: "Fasting Timer", category: "Health & Fitness", description: "Intermittent fasting timer", slug: "fasting-timer", keywords: ["fasting", "timer", "intermittent"] },
 
   // File Converters & Editors (111-180)
-  { id: "111", name: "PDF to Text", category: "File Converters & Editors", description: "Extract text from PDF files", slug: "pdf-to-text", keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool260"], affiliateLinks: [{ name: "SmallPDF", url: "https://smallpdf.com", description: "Professional PDF tools" }, { name: "iLovePDF", url: "https://www.ilovepdf.com", description: "All-in-one PDF solution" }] },
+  {
+    id: "111",
+    name: "PDF to Text",
+    category: "File Converters & Editors",
+    description: "Extract text from PDF files",
+    slug: "pdf-to-text",
+    keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool260"],
+    affiliateLinks: [{ name: "SmallPDF", url: "https://smallpdf.com", description: "Professional PDF tools" }, { name: "iLovePDF", url: "https://www.ilovepdf.com", description: "All-in-one PDF solution" }],
+    longDescription: "Our free PDF to Text converter allows you to instantly extract text from any PDF document directly in your browser. Unlike other tools that upload your sensitive documents to a cloud server, Tool260 processes your files locally using advanced JavaScript libraries. This means your data never leaves your device, ensuring 100% privacy and security. Whether you need to grab a quote from a research paper or convert an entire ebook to editable text, this tool handles it in seconds.",
+    howToSteps: [
+      "Click the 'Select File' button or drag and drop your PDF into the upload area.",
+      "Wait a brief moment for the browser to process your file. Larger files may take a few extra seconds.",
+      "Once extraction is complete, the text will appear in the result box.",
+      "Click 'Copy to Clipboard' to use the text immediately, or 'Download .txt' to save it to your computer."
+    ],
+    features: [
+      "100% Privacy: Files are processed locally, never uploaded.",
+      "Formatting Retention: Preserves paragraphs and basic structure where possible.",
+      "Universal Compatibility: Works on Windows, Mac, Linux, Android, and iOS.",
+      "No Limits: Convert as many PDFs as you want, completely free.",
+      "Fast Extraction: optimized engine for quick results."
+    ],
+    faqs: [
+      {
+        question: "Is this PDF to Text converter free?",
+        answer: "Yes, it is completely free to use with no hidden fees or subscriptions."
+      },
+      {
+        question: "Do you store my PDF files?",
+        answer: "No. Your files are processed entirely within your web browser. We never see, store, or upload your documents."
+      },
+      {
+        question: "Does it work with scanned PDFs (OCR)?",
+        answer: "Currently, this tool extracts text from standard PDFs. Support for scanned image-based PDFs (OCR) is coming in a future update."
+      }
+    ]
+  },
   { id: "112", name: "PDF to Images", category: "File Converters & Editors", description: "Convert PDF pages to images", slug: "pdf-to-images", keywords: ["pdf", "images", "convert", "pdf to img", "pdf to jpg", "pdf to png", "convert pdf to image"] },
   { id: "113", name: "Images to PDF", category: "File Converters & Editors", description: "Combine images into PDF", slug: "images-to-pdf", keywords: ["images", "pdf", "combine", "img to pdf", "jpg to pdf", "png to pdf", "convert image to pdf", "picture to pdf"] },
   { id: "114", name: "Merge PDFs", category: "File Converters & Editors", description: "Merge multiple PDF files", slug: "merge-pdfs", keywords: ["merge", "pdf", "combine", "join pdf", "combine pdfs online", "tool260"] },
@@ -235,7 +275,38 @@ export const tools: Tool[] = [
   { id: "180", name: "File Validator", category: "File Converters & Editors", description: "Validate file formats", slug: "file-validator", keywords: ["validate", "file", "format"] },
 
   // Text & Code Tools (181-200)
-  { id: "181", name: "JSON Formatter", category: "Text & Code Tools", description: "Format and validate JSON", slug: "json-formatter", keywords: ["json", "formatter", "validate"] },
+  {
+    id: "181",
+    name: "JSON Formatter",
+    category: "Text & Code Tools",
+    description: "Format and validate JSON",
+    slug: "json-formatter",
+    keywords: ["json", "formatter", "validate"],
+    longDescription: "Debug, validate, and beautify your JSON data with our instant JSON Formatter. Developers know the pain of staring at minified JSON strings. Our tool automatically formats your ugly JSON into a readable, indented structure with syntax highlighting. It also validates your JSON in real-time, pointing out syntax errors so you can fix them quickly. Perfect for API development, configuration files, and debugging.",
+    howToSteps: [
+      "Paste your raw/minified JSON string into the input editor.",
+      "The tool will automatically validate your code. If there are errors, they will be highlighted.",
+      "Click 'Format' to beautify the JSON with proper indentation.",
+      "Use the 'Copy' button to grab the formatted code or 'Download' to save it as a .json file."
+    ],
+    features: [
+      "Syntax Validation: Instantly catch missing commas or brackets.",
+      "Auto-Indentation: Makes complex nested objects easy to read.",
+      "Collapsible Nodes: Fold and unfold objects to focus on what matters.",
+      "Dark Mode Support: Easy on the eyes for late-night coding sessions.",
+      "Local Processing: Your data stays in your browser."
+    ],
+    faqs: [
+      {
+        question: "Why is my JSON showing as invalid?",
+        answer: "Common reasons include missing quotes around keys, trailing commas, or using single quotes instead of double quotes. Our tool highlights the exact line number of the error."
+      },
+      {
+        question: "Can I format large JSON files?",
+        answer: "Yes! Since we process data locally in your browser, you can handle large files without waiting for server uploads."
+      }
+    ]
+  },
   { id: "182", name: "XML Formatter", category: "Text & Code Tools", description: "Format XML code", slug: "xml-formatter", keywords: ["xml", "formatter", "format"] },
   { id: "183", name: "SQL Formatter", category: "Text & Code Tools", description: "Format SQL queries", slug: "sql-formatter", keywords: ["sql", "formatter", "query"] },
   { id: "184", name: "CSS Formatter", category: "Text & Code Tools", description: "Format CSS code", slug: "css-formatter", keywords: ["css", "formatter", "format"] },
@@ -257,7 +328,38 @@ export const tools: Tool[] = [
   { id: "200", name: "Escape/Unescape", category: "Text & Code Tools", description: "Escape and unescape strings", slug: "escape-unescape", keywords: ["escape", "unescape", "string"] },
 
   // Image & Design Tools (201-210)
-  { id: "201", name: "Image Resizer", category: "Image & Design Tools", description: "Resize images to any dimensions", slug: "image-resizer", keywords: ["image", "resize", "dimensions"] },
+  {
+    id: "201",
+    name: "Image Resizer",
+    category: "Image & Design Tools",
+    description: "Resize images to any dimensions",
+    slug: "image-resizer",
+    keywords: ["image", "resize", "dimensions"],
+    longDescription: "Resize your images to the perfect dimensions for social media, websites, or printing without losing quality. Our Image Resizer supports all major formats including JPG, PNG, and WebP. You can resize by percentage or set exact pixel dimensions. Best of all, it works entirely in your browser, so you never have to worry about uploading personal photos to a stranger's server.",
+    howToSteps: [
+      "Upload your image by dragging it onto the page or clicking the upload area.",
+      "Enter your desired width and height in pixels, or use the percentage slider.",
+      "Select 'Maintain Aspect Ratio' to prevent distortion (optional).",
+      "Click 'Resize Image' and then download your perfectly sized photo."
+    ],
+    features: [
+      "Privacy First: Photos are processed locally on your device.",
+      "High Quality: Smart algorithms ensure your images stay crisp.",
+      "Format Support: Works with JPG, PNG, WebP, and GIF.",
+      "Aspect Ratio Lock: easy way to scale images without stretching them.",
+      "Bulk Processing: (Coming Soon) Resize multiple images at once."
+    ],
+    faqs: [
+      {
+        question: "Will resizing reduce my image quality?",
+        answer: "Making an image smaller usually preserves quality perfectly. Making an image much larger than original may result in some pixelation, but our tool tries to smooth this out."
+      },
+      {
+        question: "What is the maximum file size?",
+        answer: "Since we process in the browser, you are limited only by your device's memory, not by our server limits. Most users can resize images up to 50MB easily."
+      }
+    ]
+  },
   { id: "202", name: "Image Cropper", category: "Image & Design Tools", description: "Crop images with precision", slug: "image-cropper", keywords: ["image", "crop", "edit"] },
   { id: "203", name: "Image Converter", category: "Image & Design Tools", description: "Convert between image formats (JPG, PNG, WEBP, etc.)", slug: "image-converter", keywords: ["image", "convert", "format"] },
   { id: "204", name: "Remove Background", category: "Image & Design Tools", description: "Remove background from images automatically", slug: "remove-background", keywords: ["background", "remove", "transparent"] },
