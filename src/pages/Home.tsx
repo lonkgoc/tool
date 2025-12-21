@@ -25,8 +25,9 @@ export default function Home() {
     <Layout>
       <div className="space-y-12">
         <Helmet>
-          <title>Tool260 - Tool 260 Free Online Tools & Converters</title>
-          <meta name="description" content="Tool 260 - 260 Free Online Tools. No Sign-Up, No Limits, Forever Free. Productivity, Finance, Health, File Converters, and more." />
+          <title>Tool 260 - Free Online Tools & Converters (No Account Needed)</title>
+          <meta name="description" content="Tool 260 (Tool260) provides 260+ free online tools for developers and daily tasks. Convert files, edit images, and calculate finance with Tool 260." />
+          <meta name="keywords" content="tool 260, tool260, tool 260 free, tool260.com, free online tools, online converters" />
           <script type="application/ld+json">
             {JSON.stringify({
               "@context": "https://schema.org",
