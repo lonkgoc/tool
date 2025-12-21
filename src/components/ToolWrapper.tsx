@@ -27,14 +27,14 @@ export default function ToolWrapper({ title, description, children }: ToolWrappe
           <div>
             <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-1">Pro Tip</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              For advanced features and unlimited usage, consider upgrading to premium tools. 
+              For advanced features and unlimited usage, consider upgrading to premium tools.
               Check out our recommended partners for professional solutions.
             </p>
           </div>
         </div>
       </div>
 
-      <AdUnit format="infeed" />
+      <AdUnit format="banner" />
     </div>
   );
 }
