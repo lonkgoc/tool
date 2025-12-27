@@ -29,7 +29,7 @@ export const tools: Tool[] = [
   // Homepage Entry - appears in search results for "tool260" variations
   {
     id: "0",
-    name: "Tool260 - Free Online Tools & Converters",
+    name: "Tool 260 - Free Online Tools & Converters",
     category: "Productivity & Planning",
     description: "Tool260.com - Your all-in-one platform for 260+ free online tools including PDF converters, image editors, calculators, generators, and utilities. No sign-up required.",
     slug: "home",

@@ -66,7 +66,7 @@ export default function Navbar() {
             <span className="text-white font-bold text-xl">T</span>
           </div>
           <span className="hidden sm:inline text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Tool260
+            Tool 260
           </span>
         </Link>
       </div>

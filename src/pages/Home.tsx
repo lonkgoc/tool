@@ -26,14 +26,14 @@ export default function Home() {
       <div className="space-y-12">
         <Helmet>
           <title>Tool 260 - Free Online Tools & Converters (No Account Needed)</title>
-          <meta name="description" content="Tool 260 (Tool260) provides 260+ free online tools for developers and daily tasks. Convert files, edit images, and calculate finance with Tool 260." />
-          <meta name="keywords" content="tool 260, tool260, tool 260 free, tool260.com, free online tools, online converters" />
+          <meta name="description" content="Tool 260 (Tool 260) provides 260+ free online tools for developers and daily tasks. Convert files, edit images, and calculate finance with Tool 260." />
+          <meta name="keywords" content="tool 260, tool260, tool 260 free, tool 260 com, tool260.com, free online tools, online converters" />
           <script type="application/ld+json">
             {JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Tool260",
-              "alternateName": "Tool 260",
+              "name": "Tool 260",
+              "alternateName": "Tool260",
               "url": "https://tool260.com",
               "potentialAction": {
                 "@type": "SearchAction",
@@ -48,11 +48,11 @@ export default function Home() {
           <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass mb-6">
             <Sparkles className="w-4 h-4 text-blue-500" />
             <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
-              Tool260 - Free Online Tools
+              Tool 260 - Free Online Tools
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent leading-tight">
-            Tool260: 260+ Free Online Tools, Converters & Calculators
+            Tool 260: 260+ Free Online Tools, Converters & Calculators
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8 max-w-3xl mx-auto">
             Your ultimate toolbox for productivity. No account, no limits, 100% free and secure.
@@ -63,7 +63,7 @@ export default function Home() {
               The Best Free Online Utility Suite
             </h2>
             <p>
-              Welcome to <strong>Tool260</strong>, your premier destination for free, high-quality online utilities.
+              Welcome to <strong>Tool 260</strong>, your premier destination for free, high-quality online utilities.
               We believe that simple tasks shouldn't require complex software or expensive subscriptions.
               That's why we've built a comprehensive library of <strong>260+ free tools</strong> that run directly in your browser, covering everything from <strong>PDF conversion</strong> and <strong>image editing</strong> to <strong>finance calculators</strong> and <strong>developer utilities</strong>.
             </p>
@@ -78,14 +78,14 @@ export default function Home() {
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-indigo-500/50 transition-colors">
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">💎 Professional Tools, Zero Cost</h3>
                 <p>
-                  Forget about monthly fees or "freemium" limits. Tool260 provides professional-grade <strong>PDF tools</strong>, <strong>JSON formatters</strong>, and <strong>BMI calculators</strong> completely free.
+                  Forget about monthly fees or "freemium" limits. Tool 260 provides professional-grade <strong>PDF tools</strong>, <strong>JSON formatters</strong>, and <strong>BMI calculators</strong> completely free.
                   No sign-up, no credit cards, and no watermarks—just the tools you need, whenever you need them.
                 </p>
               </div>
             </div>
             <p className="text-center pt-6">
               Browse our categories below to discover powerful <em>SEO tools</em>, <em>text manipulators</em>, and <em>productivity planners</em>.
-              Tool260 is optimized for all devices, so you can convert files or calculate loans on the go.
+              Tool 260 is optimized for all devices, so you can convert files or calculate loans on the go.
             </p>
           </div>
 
