@@ -38,6 +38,10 @@ export const tools: Tool[] = [
       "tool260",
       "tool 260 com",
       "tool260.com",
+      "i love pdf",
+      "small pdf",
+      "ilovepdf",
+      "smallpdf",
       "file converters",
       "pdf tools",
       "free online tools",
@@ -176,7 +180,7 @@ export const tools: Tool[] = [
     category: "File Converters & Editors",
     description: "Extract text from PDF files",
     slug: "pdf-to-text",
-    keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool260", "tool 260", "file converters", "best pdf tools", "online pdf help"],
+    keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool 260", "tool260", "i love pdf", "small pdf", "ilovepdf", "smallpdf", "file converters", "best pdf tools", "online pdf help"],
     longDescription: "Our free PDF to Text converter allows you to instantly extract text from any PDF document directly in your browser. Unlike other tools that upload your sensitive documents to a cloud server, Tool 260 processes your files locally using advanced JavaScript libraries. This means your data never leaves your device, ensuring 100% privacy and security. Whether you need to grab a quote from a research paper or convert an entire ebook to editable text, this tool handles it in seconds.",
     howToSteps: [
       "Click the 'Select File' button or drag and drop your PDF into the upload area.",
@@ -213,7 +217,7 @@ export const tools: Tool[] = [
     category: "File Converters & Editors",
     description: "Combine multiple images into a single PDF document",
     slug: "images-to-pdf",
-    keywords: ["images to pdf", "jpg to pdf", "png to pdf", "convert image to pdf", "picture to pdf", "combine images to pdf online", "free image converter", "tool260", "tool 260", "file converters", "best images to pdf", "online image to pdf"],
+    keywords: ["images to pdf", "jpg to pdf", "png to pdf", "convert image to pdf", "picture to pdf", "combine images to pdf online", "free image converter", "tool 260", "tool260", "i love pdf", "small pdf", "ilovepdf", "smallpdf", "file converters", "best images to pdf", "online image to pdf"],
     longDescription: "Turn your photos, scanned documents, and graphics into a professional PDF format with our Images to PDF converter. Whether you need to combine several JPGs for an assignment, turn PNG screenshots into a report, or archive precious photos in a single file, Tool 260 makes it easy. Your privacy is our priority: all image processing happens directly on your device inside your browser, so your private photos are never uploaded to our servers.",
     howToSteps: [
       "Select one or more images (JPG, PNG, WebP) from your device or use drag-and-drop.",
@@ -246,7 +250,7 @@ export const tools: Tool[] = [
     category: "File Converters & Editors",
     description: "Combine multiple PDF files into one",
     slug: "merge-pdfs",
-    keywords: ["merge pdf", "combine pdf", "join pdf", "combine pdfs online", "merge pdf files free", "pdf joiner", "tool260", "tool 260", "file converters", "best pdf merger", "online merge tool"],
+    keywords: ["merge pdf", "combine pdf", "join pdf", "combine pdfs online", "merge pdf files free", "pdf joiner", "tool 260", "tool260", "i love pdf", "small pdf", "ilovepdf", "smallpdf", "file converters", "best pdf merger", "online merge tool"],
     longDescription: "Simplify your digital life by merging multiple PDF files into one organized document. Our Merge PDFs tool is perfect for combining chapters of a project, gathering monthly reports, or merging signed contracts. By processing your files locally using your browser's power, Tool 260 ensures that your confidential documents are never sent across the internet, offering unparalleled speed and security compared to cloud-based alternatives.",
     howToSteps: [
       "Upload the PDF files you want to combine by clicking the selection area.",

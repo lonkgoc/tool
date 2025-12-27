@@ -25,8 +25,23 @@ const Seo: React.FC<SeoProps> = ({
 }) => {
     const siteTitle = 'Tool 260 - 260 Free Online Tools';
     const defaultDescription = 'Tool 260 - 260 Free Online Tools — No Sign-Up, No Limits, Forever Free. Productivity, Finance, Health, File Converters, and more.';
-    const defaultKeywords = 'tool 260, tool260, file converters, online tools, file converter, image converter, pdf tools, developer tools, free tools, no signup';
-    const siteUrl = 'https://tool260.com';
+    const defaultKeywords = [
+        "tool 260",
+        "tool260",
+        "i love pdf",
+        "small pdf",
+        "ilovepdf",
+        "smallpdf",
+        "file converters",
+        "pdf tools",
+        "free online tools",
+        "online converters",
+        "file converter",
+        "online tools",
+        "free converters",
+        "best online tools",
+        "web utilities"
+    ].join(', '); const siteUrl = 'https://tool260.com';
 
     const fullTitle = title ? `${title} | Tool 260` : siteTitle;
     const finalDescription = description || defaultDescription;

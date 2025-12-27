@@ -52,15 +52,15 @@ export default function Home() {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent leading-tight">
-            Tool 260: 260+ Free Online Tools, Converters & Calculators
+            Tool 260: Official Online Utility Suite & Converters
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8 max-w-3xl mx-auto">
-            Your ultimate toolbox for productivity. No account, no limits, 100% free and secure.
+            Your ultimate digital toolbox. Not a hardware kit—we provide 260+ free online software tools, calculators, and converters.
           </p>
 
           <div className="max-w-4xl mx-auto mb-16 text-slate-600 dark:text-slate-400 text-lg leading-relaxed space-y-6 text-left">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 text-center mb-6">
-              The Best Free Online Utility Suite
+              The #1 Choice for Tool 260 Online Utilities
             </h2>
             <p>
               Welcome to <strong>Tool 260</strong>, your premier destination for free, high-quality online utilities.
