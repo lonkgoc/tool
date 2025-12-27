@@ -1,1 +1,0 @@
-import{j as o}from"./index-DqXMfBpZ.js";import{I as t}from"./ImageTools-CmVIqfaQ.js";import"./alert-circle-B7aAIleE.js";import"./upload-DyHvPoT9.js";import"./download-DfWGAFzS.js";function a(){return o.jsx(t,{initialOp:"svg2png",hideTabs:!0})}export{a as default};

@@ -1,1 +1,0 @@
-import{j as r}from"./index-DqXMfBpZ.js";import{I as o}from"./ImageTools-CmVIqfaQ.js";import"./alert-circle-B7aAIleE.js";import"./upload-DyHvPoT9.js";import"./download-DfWGAFzS.js";function a(){return r.jsx(o,{initialOp:"crop",hideTabs:!0})}export{a as default};

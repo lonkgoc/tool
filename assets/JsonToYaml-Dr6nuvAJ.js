@@ -1,0 +1,1 @@
+import{j as o}from"./index-Ckx5g3CE.js";import{D as t}from"./DataConverter-BfM2C7T7.js";import"./arrow-right-left-DUdmOB73.js";import"./alert-circle-CwdPxsKy.js";import"./check-BPMUdwMC.js";import"./copy-D3GgtY91.js";import"./download-CBMF7h4P.js";function n(){return o.jsx(t,{initialMode:"json-yaml",hideTabs:!0})}export{n as default};

@@ -1,1 +1,0 @@
-import{j as i}from"./index-DqXMfBpZ.js";import{M as r}from"./MediaTools-DOzB_LOq.js";import"./image-DYM7cvMq.js";import"./info-C0qj7bR9.js";import"./alert-circle-B7aAIleE.js";import"./download-DfWGAFzS.js";function s(){return i.jsx(r,{initialOp:"gif-maker",hideTabs:!0})}export{s as default};
