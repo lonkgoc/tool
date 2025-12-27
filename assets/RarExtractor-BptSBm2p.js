@@ -1,0 +1,1 @@
+import{j as r}from"./index-DrWj1tgA.js";import{A as t}from"./ArchiveTools-B793uwph.js";import"./jszip.min-Bi_8JJEF.js";import"./file-text-h9bHkSTw.js";import"./alert-circle-CB5MyUBg.js";import"./download-DZ1EfTSG.js";import"./check-C28q0Ni9.js";function x(){return r.jsx(t,{initialOp:"extract",hideTabs:!0})}export{x as default};

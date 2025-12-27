@@ -1,0 +1,1 @@
+import{j as o}from"./index-DrWj1tgA.js";import{D as t}from"./DataConverter-XOSecN1P.js";import"./arrow-right-left-Zm9eDiY6.js";import"./alert-circle-CB5MyUBg.js";import"./check-C28q0Ni9.js";import"./copy-BeFJNMJT.js";import"./download-DZ1EfTSG.js";function n(){return o.jsx(t,{initialMode:"json-xml",hideTabs:!0})}export{n as default};
