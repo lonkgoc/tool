@@ -1,0 +1,1 @@
+import{j as o}from"./index-DqXMfBpZ.js";import{D as t}from"./DataConverter-Coa7ytEW.js";import"./arrow-right-left-Cdhm6xoj.js";import"./alert-circle-B7aAIleE.js";import"./check-BUCBOD09.js";import"./copy-cQ1kXkXV.js";import"./download-DfWGAFzS.js";function n(){return o.jsx(t,{initialMode:"json-csv",hideTabs:!0})}export{n as default};

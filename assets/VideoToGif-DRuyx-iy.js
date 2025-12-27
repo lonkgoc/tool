@@ -1,0 +1,1 @@
+import{j as i}from"./index-DqXMfBpZ.js";import{M as o}from"./MediaTools-DOzB_LOq.js";import"./image-DYM7cvMq.js";import"./info-C0qj7bR9.js";import"./alert-circle-B7aAIleE.js";import"./download-DfWGAFzS.js";function a(){return i.jsx(o,{initialOp:"video-to-gif",hideTabs:!0})}export{a as default};

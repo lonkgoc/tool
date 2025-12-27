@@ -1,1 +1,0 @@
-import{j as o}from"./index-DrWj1tgA.js";import{I as r}from"./ImageTools-mtfGXWX5.js";import"./alert-circle-CB5MyUBg.js";import"./upload-C3dpc3Xt.js";import"./download-DZ1EfTSG.js";function p(){return o.jsx(r,{initialOp:"compress",hideTabs:!0})}export{p as default};

@@ -1,0 +1,1 @@
+import{j as t}from"./index-DqXMfBpZ.js";import{A as i}from"./ArchiveTools-Dfsd3sOk.js";import"./jszip.min-DcIqDBxk.js";import"./file-text-BAtexiN6.js";import"./alert-circle-B7aAIleE.js";import"./download-DfWGAFzS.js";import"./check-BUCBOD09.js";function l(){return t.jsx(i,{initialOp:"split",hideTabs:!0})}export{l as default};

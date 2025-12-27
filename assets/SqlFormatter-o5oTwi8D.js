@@ -1,0 +1,12 @@
+import{r,j as e}from"./index-DqXMfBpZ.js";import{C as N}from"./check-BUCBOD09.js";import{C as u}from"./copy-cQ1kXkXV.js";import{D as f}from"./download-DfWGAFzS.js";function R(){const[a,d]=r.useState(""),[s,c]=r.useState(""),[n,o]=r.useState(!1),p=t=>t.replace(/\s+/g," ").replace(/\s*,\s*/g,", ").replace(/\s*\(\s*/g," (").replace(/\s*\)\s*/g,") ").replace(/\bSELECT\b/gi,`
+SELECT`).replace(/\bFROM\b/gi,`
+FROM`).replace(/\bWHERE\b/gi,`
+WHERE`).replace(/\bJOIN\b/gi,`
+JOIN`).replace(/\bLEFT JOIN\b/gi,`
+LEFT JOIN`).replace(/\bRIGHT JOIN\b/gi,`
+RIGHT JOIN`).replace(/\bINNER JOIN\b/gi,`
+INNER JOIN`).replace(/\bGROUP BY\b/gi,`
+GROUP BY`).replace(/\bORDER BY\b/gi,`
+ORDER BY`).replace(/\bHAVING\b/gi,`
+HAVING`).replace(/\bUNION\b/gi,`
+UNION`).trim(),i=()=>{if(!a.trim()){c("");return}c(p(a))},x=()=>{navigator.clipboard.writeText(s),o(!0),setTimeout(()=>o(!1),2e3)},b=()=>{const t=new Blob([s],{type:"text/plain"}),m=URL.createObjectURL(t),l=document.createElement("a");l.href=m,l.download="formatted.sql",l.click(),URL.revokeObjectURL(m)};return e.jsxs("div",{className:"space-y-6",children:[e.jsxs("div",{className:"card",children:[e.jsx("h2",{className:"text-xl font-bold text-slate-900 dark:text-slate-100 mb-4",children:"SQL Formatter"}),e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{children:[e.jsx("label",{className:"block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2",children:"SQL Query"}),e.jsx("textarea",{value:a,onChange:t=>d(t.target.value),onBlur:i,placeholder:"Paste your SQL query here...",className:"w-full input-field font-mono text-sm h-48"})]}),e.jsx("button",{onClick:i,className:"btn-primary w-full",children:"Format SQL"})]})]}),s&&e.jsxs("div",{className:"card",children:[e.jsxs("div",{className:"flex items-center justify-between mb-4",children:[e.jsx("h3",{className:"font-semibold text-slate-900 dark:text-slate-100",children:"Formatted SQL"}),e.jsxs("div",{className:"flex gap-2",children:[e.jsxs("button",{onClick:x,className:"btn-secondary flex items-center space-x-2",children:[n?e.jsx(N,{className:"w-4 h-4"}):e.jsx(u,{className:"w-4 h-4"}),e.jsx("span",{children:n?"Copied!":"Copy"})]}),e.jsxs("button",{onClick:b,className:"btn-secondary flex items-center space-x-2",children:[e.jsx(f,{className:"w-4 h-4"}),e.jsx("span",{children:"Download"})]})]})]}),e.jsx("textarea",{value:s,readOnly:!0,className:"w-full input-field font-mono text-sm h-96"})]})]})}export{R as default};
