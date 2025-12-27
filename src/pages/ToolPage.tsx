@@ -42,6 +42,8 @@ export default function ToolPage() {
         description={tool.description}
         keywords={`${tool.name}, ${tool.category}, free online tool, ${tool.name} online, free ${tool.name}`}
         canonicalUrl={`https://tool260.com/tools/${tool.slug}`}
+        howToSteps={tool.howToSteps}
+        faqs={tool.faqs}
       />
       <ToolWrapper title={tool.name} description={tool.description}>
         <Suspense fallback={

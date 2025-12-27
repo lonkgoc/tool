@@ -34,10 +34,12 @@ export const tools: Tool[] = [
     description: "Tool260.com - Your all-in-one platform for 260+ free online tools including PDF converters, image editors, calculators, generators, and utilities. No sign-up required.",
     slug: "home",
     keywords: [
-      "tool260",
       "tool 260",
-      "tool260.com",
+      "tool260",
       "tool 260 com",
+      "tool260.com",
+      "file converters",
+      "pdf tools",
       "free online tools",
       "online converters",
       "free tools",
@@ -174,9 +176,8 @@ export const tools: Tool[] = [
     category: "File Converters & Editors",
     description: "Extract text from PDF files",
     slug: "pdf-to-text",
-    keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool260"],
-    affiliateLinks: [{ name: "SmallPDF", url: "https://smallpdf.com", description: "Professional PDF tools" }, { name: "iLovePDF", url: "https://www.ilovepdf.com", description: "All-in-one PDF solution" }],
-    longDescription: "Our free PDF to Text converter allows you to instantly extract text from any PDF document directly in your browser. Unlike other tools that upload your sensitive documents to a cloud server, Tool260 processes your files locally using advanced JavaScript libraries. This means your data never leaves your device, ensuring 100% privacy and security. Whether you need to grab a quote from a research paper or convert an entire ebook to editable text, this tool handles it in seconds.",
+    keywords: ["pdf", "text", "extract", "convert pdf to text", "ocr", "online converter", "tool260", "tool 260", "file converters", "best pdf tools", "online pdf help"],
+    longDescription: "Our free PDF to Text converter allows you to instantly extract text from any PDF document directly in your browser. Unlike other tools that upload your sensitive documents to a cloud server, Tool 260 processes your files locally using advanced JavaScript libraries. This means your data never leaves your device, ensuring 100% privacy and security. Whether you need to grab a quote from a research paper or convert an entire ebook to editable text, this tool handles it in seconds.",
     howToSteps: [
       "Click the 'Select File' button or drag and drop your PDF into the upload area.",
       "Wait a brief moment for the browser to process your file. Larger files may take a few extra seconds.",
@@ -206,8 +207,72 @@ export const tools: Tool[] = [
     ]
   },
   { id: "112", name: "PDF to Images", category: "File Converters & Editors", description: "Convert PDF pages to images", slug: "pdf-to-images", keywords: ["pdf", "images", "convert", "pdf to img", "pdf to jpg", "pdf to png", "convert pdf to image"] },
-  { id: "113", name: "Images to PDF", category: "File Converters & Editors", description: "Combine images into PDF", slug: "images-to-pdf", keywords: ["images", "pdf", "combine", "img to pdf", "jpg to pdf", "png to pdf", "convert image to pdf", "picture to pdf"] },
-  { id: "114", name: "Merge PDFs", category: "File Converters & Editors", description: "Merge multiple PDF files", slug: "merge-pdfs", keywords: ["merge", "pdf", "combine", "join pdf", "combine pdfs online", "tool260"] },
+  {
+    id: "113",
+    name: "Images to PDF",
+    category: "File Converters & Editors",
+    description: "Combine multiple images into a single PDF document",
+    slug: "images-to-pdf",
+    keywords: ["images to pdf", "jpg to pdf", "png to pdf", "convert image to pdf", "picture to pdf", "combine images to pdf online", "free image converter", "tool260", "tool 260", "file converters", "best images to pdf", "online image to pdf"],
+    longDescription: "Turn your photos, scanned documents, and graphics into a professional PDF format with our Images to PDF converter. Whether you need to combine several JPGs for an assignment, turn PNG screenshots into a report, or archive precious photos in a single file, Tool 260 makes it easy. Your privacy is our priority: all image processing happens directly on your device inside your browser, so your private photos are never uploaded to our servers.",
+    howToSteps: [
+      "Select one or more images (JPG, PNG, WebP) from your device or use drag-and-drop.",
+      "Rearrange the order of images if needed using the simple interface.",
+      "Adjust page settings like orientation, margin, and page size.",
+      "Click 'Convert to PDF' to generate your document instantly.",
+      "Download the resulting PDF file to your computer or mobile device."
+    ],
+    features: [
+      "No File Uploads: Everything stays on your local machine.",
+      "Supports Multiple Formats: Convert JPG, PNG, GIF, and WebP flawlessly.",
+      "Bulk Conversion: Combine dozens of images into one PDF at once.",
+      "High Resolution: Maintain the original quality of your uploaded images.",
+      "Cross-Platform: Works on mobile, tablet, and desktop without apps."
+    ],
+    faqs: [
+      {
+        question: "How many images can I convert at once?",
+        answer: "There is no fixed limit! Since the conversion happens in your browser, it depends on your device's memory. Most users can easily combine 50+ images at a time."
+      },
+      {
+        question: "Is there a watermark on the output PDF?",
+        answer: "No. Unlike other 'free' tools, Tool260 provides a clean, watermark-free PDF every time."
+      }
+    ]
+  },
+  {
+    id: "114",
+    name: "Merge PDFs",
+    category: "File Converters & Editors",
+    description: "Combine multiple PDF files into one",
+    slug: "merge-pdfs",
+    keywords: ["merge pdf", "combine pdf", "join pdf", "combine pdfs online", "merge pdf files free", "pdf joiner", "tool260", "tool 260", "file converters", "best pdf merger", "online merge tool"],
+    longDescription: "Simplify your digital life by merging multiple PDF files into one organized document. Our Merge PDFs tool is perfect for combining chapters of a project, gathering monthly reports, or merging signed contracts. By processing your files locally using your browser's power, Tool 260 ensures that your confidential documents are never sent across the internet, offering unparalleled speed and security compared to cloud-based alternatives.",
+    howToSteps: [
+      "Upload the PDF files you want to combine by clicking the selection area.",
+      "Drag and drop the files to arrange them in the exact order you want them merged.",
+      "Preview the file list to ensure everything is correct.",
+      "Click the 'Merge' button to initiate the local joining process.",
+      "Download your new, single PDF document immediately."
+    ],
+    features: [
+      "Bank-Grade Privacy: Files never leave your browser, ensuring total confidentiality.",
+      "Instant Processing: No upload/download wait times for the merging process.",
+      "Preserve Formatting: Keeps all links, fonts, and layouts from original files.",
+      "Order Control: Easily reorder files before merging with a simple drag-and-drop.",
+      "Free Forever: No registration or daily usage limits."
+    ],
+    faqs: [
+      {
+        question: "Can I merge password-protected PDFs?",
+        answer: "Yes, provided you know the password. You'll need to unlock them first using our 'Remove PDF Password' tool or enter the password when prompted."
+      },
+      {
+        question: "Is there a limit on the total file size?",
+        answer: "The limit is based on your device's RAM. Most modern browsers can handle merging files totaling hundreds of megabytes without issue."
+      }
+    ]
+  },
   { id: "115", name: "Split PDF", category: "File Converters & Editors", description: "Split PDF into multiple files", slug: "split-pdf", keywords: ["split", "pdf", "divide"] },
   { id: "116", name: "Compress PDF", category: "File Converters & Editors", description: "Reduce PDF file size", slug: "compress-pdf", keywords: ["compress", "pdf", "size"] },
   { id: "117", name: "Rotate PDF", category: "File Converters & Editors", description: "Rotate PDF pages", slug: "rotate-pdf", keywords: ["rotate", "pdf", "pages"] },

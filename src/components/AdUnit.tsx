@@ -14,43 +14,46 @@ export default function AdUnit({ format = 'rectangle', className = '' }: AdUnitP
     // Clear previous content
     adRef.current.innerHTML = '';
 
-    if (format === 'rectangle') {
-      const adConfig = document.createElement('script');
-      adConfig.type = 'text/javascript';
-      adConfig.innerHTML = `
-        atOptions = {
-          'key' : '18a9fd4005f0eb2763390b007dd5612f',
-          'format' : 'iframe',
-          'height' : 250,
-          'width' : 300,
-          'params' : {}
-        };
-      `;
-      const adScript = document.createElement('script');
-      adScript.type = 'text/javascript';
-      adScript.src = 'https://www.highperformanceformat.com/18a9fd4005f0eb2763390b007dd5612f/invoke.js';
+    const width = format === 'banner' ? 728 : 300;
+    const height = format === 'banner' ? 90 : 250;
+    const key = format === 'banner' ? 'fded2a465dafffa4e5fb94b7592bb766' : '18a9fd4005f0eb2763390b007dd5612f';
 
-      adRef.current.appendChild(adConfig);
-      adRef.current.appendChild(adScript);
-    } else if (format === 'banner') {
-      const adConfig = document.createElement('script');
-      adConfig.type = 'text/javascript';
-      adConfig.innerHTML = `
-        atOptions = {
-          'key' : 'fded2a465dafffa4e5fb94b7592bb766',
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 728,
-          'params' : {}
-        };
-      `;
-      const adScript = document.createElement('script');
-      adScript.type = 'text/javascript';
-      adScript.src = 'https://www.highperformanceformat.com/fded2a465dafffa4e5fb94b7592bb766/invoke.js';
+    const iframe = document.createElement('iframe');
+    iframe.width = width.toString();
+    iframe.height = height.toString();
+    iframe.style.border = 'none';
+    iframe.style.overflow = 'hidden';
+    iframe.scrolling = 'no';
 
-      adRef.current.appendChild(adConfig);
-      adRef.current.appendChild(adScript);
+    adRef.current.appendChild(iframe);
+
+    // Write the ad script into the iframe to isolate the `atOptions` context
+    const doc = iframe.contentWindow?.document;
+    if (doc) {
+      doc.open();
+      doc.write(`
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <style>body{margin:0;padding:0;overflow:hidden;background:transparent;}</style>
+          </head>
+          <body>
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '${key}',
+                'format' : 'iframe',
+                'height' : ${height},
+                'width' : ${width},
+                'params' : {}
+              };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/${key}/invoke.js"></script>
+          </body>
+        </html>
+      `);
+      doc.close();
     }
+
   }, [format]);
 
   // Dynamic dimensions based on format
@@ -64,7 +67,7 @@ export default function AdUnit({ format = 'rectangle', className = '' }: AdUnitP
         ref={adRef}
         className={`${dimensions} flex items-center justify-center overflow-hidden`}
       >
-        {/* Adsterra Banner */}
+        {/* Adsterra Banner (Iframe Isolated) */}
       </div>
     </div>
   );

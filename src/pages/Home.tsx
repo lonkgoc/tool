@@ -51,41 +51,41 @@ export default function Home() {
               Tool260 - Free Online Tools
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            Tool260: Free Online Tools & Converters
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent leading-tight">
+            Tool260: 260+ Free Online Tools, Converters & Calculators
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8 max-w-3xl mx-auto">
-            Your all-in-one platform for 260+ free online tools. No sign-up required.
+            Your ultimate toolbox for productivity. No account, no limits, 100% free and secure.
           </p>
 
           <div className="max-w-4xl mx-auto mb-16 text-slate-600 dark:text-slate-400 text-lg leading-relaxed space-y-6 text-left">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 text-center mb-6">
-              Why Choose Tool260?
+              The Best Free Online Utility Suite
             </h2>
             <p>
               Welcome to <strong>Tool260</strong>, your premier destination for free, high-quality online utilities.
               We believe that simple tasks shouldn't require complex software or expensive subscriptions.
-              That's why we've built a comprehensive library of <strong>260+ free tools</strong> that run directly in your browser.
+              That's why we've built a comprehensive library of <strong>260+ free tools</strong> that run directly in your browser, covering everything from <strong>PDF conversion</strong> and <strong>image editing</strong> to <strong>finance calculators</strong> and <strong>developer utilities</strong>.
             </p>
             <div className="grid md:grid-cols-2 gap-8 mt-8">
-              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">⚡ Lightning Fast & Secure</h3>
+              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-blue-500/50 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">⚡ Private & Secure Processing</h3>
                 <p>
-                  Most of our tools, especially our files converters and image editors, process data locally on your device using advanced client-side technology.
-                  This means your sensitive files never leave your computer, ensuring 100% privacy and blazing fast speeds.
+                  Privacy is built into our DNA. Most of our tools, especially our <strong>file converters</strong> and <strong>image editors</strong>, process data locally on your device.
+                  This means your sensitive documents and personal photos never leave your computer, ensuring total data privacy and blazing fast execution.
                 </p>
               </div>
-              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">💎 Completely Free</h3>
+              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-indigo-500/50 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">💎 Professional Tools, Zero Cost</h3>
                 <p>
-                  No hidden fees, no credit cards, and no "pro" versions. Every tool on Tool260 is free to use without limits.
-                  Whether you need to convert a PDF, minify CSS, or calculate your mortgage payments, it's all here for free.
+                  Forget about monthly fees or "freemium" limits. Tool260 provides professional-grade <strong>PDF tools</strong>, <strong>JSON formatters</strong>, and <strong>BMI calculators</strong> completely free.
+                  No sign-up, no credit cards, and no watermarks—just the tools you need, whenever you need them.
                 </p>
               </div>
             </div>
             <p className="text-center pt-6">
-              Explore our categories below to find exactly what you need. From <em>developer tools</em> to <em>health calculators</em>,
-              Tool260 works on all devices—mobile, tablet, and desktop.
+              Browse our categories below to discover powerful <em>SEO tools</em>, <em>text manipulators</em>, and <em>productivity planners</em>.
+              Tool260 is optimized for all devices, so you can convert files or calculate loans on the go.
             </p>
           </div>
 
