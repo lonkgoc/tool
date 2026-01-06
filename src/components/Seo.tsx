@@ -26,21 +26,42 @@ const Seo: React.FC<SeoProps> = ({
     const siteTitle = 'Tool 260 - 260 Free Online Tools';
     const defaultDescription = 'Tool 260 - 260 Free Online Tools — No Sign-Up, No Limits, Forever Free. Productivity, Finance, Health, File Converters, and more.';
     const defaultKeywords = [
-        "tool 260",
-        "tool260",
-        "i love pdf",
-        "small pdf",
-        "ilovepdf",
-        "smallpdf",
-        "file converters",
-        "pdf tools",
-        "free online tools",
-        "online converters",
-        "file converter",
-        "online tools",
-        "free converters",
-        "best online tools",
-        "web utilities"
+        // Brand keywords (MUST DOMINATE)
+        "tool 260", "tool260", "tool260.com", "tool 260 com", "260 tools",
+        "tool 260 online", "tool260 free", "tool 260 tools", "tool260 converter",
+
+        // PDF tools (High traffic)
+        "pdf tools", "pdf editor online", "pdf converter free", "compress pdf online",
+        "merge pdf free", "split pdf online", "best pdf tools", "pdf editor without watermark",
+        "pdf to word", "word to pdf", "pdf to jpg", "jpg to pdf", "combine pdf",
+
+        // Image tools
+        "compress image", "image compressor", "resize image online", "remove background",
+        "background remover", "image converter", "png to jpg", "jpg to png",
+
+        // File converters
+        "file converter", "online converter", "free file converter", "document converter",
+        "video converter", "audio converter", "mp4 to mp3", "convert files online",
+
+        // Finance & Calculators
+        "EMI calculator", "SIP calculator", "loan calculator", "mortgage calculator",
+        "compound interest calculator", "gst calculator", "tax calculator",
+
+        // Developer tools
+        "json formatter", "json validator", "code beautifier", "base64 encoder",
+
+        // SEO tools
+        "SEO tools free", "meta tag generator", "sitemap generator", "seo checker",
+
+        // Utilities
+        "word counter", "character counter", "password generator", "qr code generator",
+
+        // Fun tools
+        "yes or no wheel", "spin the wheel", "random name picker", "coin flip",
+
+        // Competitor keywords (grabs traffic - meta only)
+        "ilovepdf", "smallpdf", "tinypng", "convertio", "zamzar", "cloudconvert",
+        "pdf24", "sejda", "remove.bg", "canva", "freeconvert"
     ].join(', '); const siteUrl = 'https://tool260.com';
 
     const fullTitle = title ? `${title} | Tool 260` : siteTitle;

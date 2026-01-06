@@ -25,21 +25,70 @@ export default function Home() {
     <Layout>
       <div className="space-y-12">
         <Helmet>
-          <title>Tool 260 - Free Online Tools & Converters (No Account Needed)</title>
-          <meta name="description" content="Tool 260 (Tool 260) provides 260+ free online tools for developers and daily tasks. Convert files, edit images, and calculate finance with Tool 260." />
-          <meta name="keywords" content="tool 260, tool260, tool 260 free, tool 260 com, tool260.com, free online tools, online converters" />
+          <title>Tool 260 - Free Online Tools & Converters | PDF Editor, EMI Calculator, SEO Tools</title>
+          <meta name="description" content="Tool 260 - 260+ free online tools. PDF editor without watermark, EMI calculator, SIP calculator, image compressor, SEO tools. No signup, no limits, 100% free." />
+          <meta name="keywords" content="tool 260, tool260, ilovepdf, smallpdf, pdf converter, EMI calculator, SIP calculator, free online tools, pdf editor, compress pdf, merge pdf, image converter, SEO tools, finance calculator, loan calculator, online converter" />
           <script type="application/ld+json">
             {JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Tool 260",
-              "alternateName": "Tool260",
+              "alternateName": ["Tool260", "tool260.com", "260 Tools"],
               "url": "https://tool260.com",
+              "description": "260+ free online tools for PDF editing, file conversion, finance calculations, and SEO. No signup required.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://tool260.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
+            })}
+          </script>
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Tool 260?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tool 260 is a free online platform offering 260+ tools for PDF editing, file conversion, image processing, finance calculations (EMI, SIP calculators), and SEO utilities. No signup or payment required."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is Tool 260 free to use?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Tool 260 is completely free. All 260+ tools are available without any signup, subscription, or hidden fees."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does Tool 260 compare to other PDF tools?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tool 260 offers comprehensive PDF tools (merge, split, compress, convert) plus 200+ additional tools including finance calculators, image editors, and SEO utilities - all completely free with no file limits or watermarks."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is my data safe on Tool 260?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Most Tool 260 tools process files locally in your browser. Your files never leave your device, ensuring complete privacy and security."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What tools are available on Tool 260?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tool 260 offers PDF tools (merge, split, compress, convert), image editors, file converters, EMI & SIP calculators, mortgage calculators, SEO tools (meta tag generator, sitemap), and productivity utilities."
+                  }
+                }
+              ]
             })}
           </script>
         </Helmet>

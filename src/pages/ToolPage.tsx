@@ -38,9 +38,22 @@ export default function ToolPage() {
       affiliateLinks={tool.affiliateLinks}
     >
       <Seo
-        title={tool.name}
-        description={tool.description}
-        keywords={`${tool.name}, ${tool.category}, free online tool, ${tool.name} online, free ${tool.name}`}
+        title={`Free ${tool.name} Online – ${tool.description.split('.')[0]}`}
+        description={`${tool.description} Free, fast, and easy ${tool.name.toLowerCase()} online. No signup required. Try tool260 now.`}
+        keywords={[
+          tool.name.toLowerCase(),
+          `free ${tool.name.toLowerCase()}`,
+          `${tool.name.toLowerCase()} online`,
+          `${tool.name.toLowerCase()} free online`,
+          `best ${tool.name.toLowerCase()}`,
+          tool.category.toLowerCase(),
+          ...tool.keywords,
+          'tool 260',
+          'tool260',
+          'free online tool',
+          'no signup',
+          'no watermark'
+        ].join(', ')}
         canonicalUrl={`https://tool260.com/tools/${tool.slug}`}
         howToSteps={tool.howToSteps}
         faqs={tool.faqs}

@@ -34,26 +34,79 @@ export const tools: Tool[] = [
     description: "Tool260.com - Your all-in-one platform for 260+ free online tools including PDF converters, image editors, calculators, generators, and utilities. No sign-up required.",
     slug: "home",
     keywords: [
-      "tool 260",
-      "tool260",
-      "tool 260 com",
-      "tool260.com",
-      "i love pdf",
-      "small pdf",
-      "ilovepdf",
-      "smallpdf",
-      "file converters",
-      "pdf tools",
-      "free online tools",
-      "online converters",
-      "free tools",
-      "web tools",
-      "online utilities",
-      "free converters",
-      "tool260 website",
-      "260 tools",
-      "all tools",
-      "homepage"
+      // Brand + Variations (MUST DOMINATE for any tool 260 search)
+      "tool 260", "tool260", "tool 260 com", "tool260.com", "tool260 tools", "tool 260 tools",
+      "online tools tool260", "tool260 pdf tools", "260 tools", "tool260 website",
+      "tool 260 free", "tool260 online", "tool 260 converter", "tool260 calculator",
+
+      // PDF & File Tools (Grab iLovePDF/SmallPDF/PDF24 crowd)
+      "pdf tools", "pdf editor online", "free pdf editor", "edit pdf online free",
+      "merge pdf online", "split pdf online", "compress pdf", "reduce pdf size",
+      "pdf to word", "word to pdf", "pdf to jpg", "jpg to pdf", "png to pdf",
+      "pdf to excel", "pdf converter free", "online pdf tools", "pdf merger",
+      "pdf editor without watermark", "pdf editor no login", "pdf editor no signup",
+      "combine pdf", "join pdf", "pdf compressor", "pdf reducer", "pdf splitter",
+      "pdf to png", "excel to pdf", "ppt to pdf", "pdf unlock", "remove pdf password",
+      "add watermark to pdf", "rotate pdf", "pdf organizer", "reorder pdf pages",
+
+      // Image Tools (Grab TinyPNG/Compressor.io/Remove.bg crowd)
+      "compress image", "image compressor", "reduce image size", "compress jpg",
+      "compress png", "image optimizer", "photo compressor", "picture compressor",
+      "remove background", "background remover", "transparent background",
+      "image resizer", "resize image online", "crop image online", "image cropper",
+      "image to pdf", "photo to pdf", "convert image", "image format converter",
+      "webp to png", "webp to jpg", "heic to jpg", "svg to png", "ico converter",
+
+      // File Converters (Grab Convertio/Zamzar/CloudConvert crowd)
+      "file converter", "online file converter", "convert files online",
+      "document converter", "image converter", "video converter online",
+      "audio converter online", "mp4 to mp3", "mp3 to wav", "jpg to png",
+      "png to webp", "docx to pdf", "pdf to docx", "file format converter",
+      "convert video", "convert audio", "convert document", "free converter",
+      "mov to mp4", "avi to mp4", "mkv to mp4", "flac to mp3", "ogg to mp3",
+      "webm to mp4", "gif to mp4", "mp4 to gif", "video to gif",
+
+      // SEO Tools (Grab SEMrush/Ahrefs/Moz/Ubersuggest crowd)
+      "free seo tools", "seo tools online", "website seo checker", "seo audit tool",
+      "seo analyzer", "keyword research tool free", "meta tag generator",
+      "robots txt generator", "xml sitemap generator", "backlink checker free",
+      "domain authority checker", "page speed checker", "seo score checker",
+      "keyword density checker", "plagiarism checker free", "broken link checker",
+
+      // Finance & Calculators (Grab Calculator.net/Bankrate crowd)
+      "emi calculator", "sip calculator", "loan calculator", "interest calculator",
+      "gst calculator", "compound interest calculator", "simple interest calculator",
+      "salary calculator", "currency converter", "percentage calculator",
+      "mortgage calculator", "car loan calculator", "home loan calculator",
+      "tax calculator", "income tax calculator", "investment calculator",
+      "roi calculator", "profit calculator", "discount calculator", "tip calculator",
+      "bmi calculator", "calorie calculator", "age calculator", "date calculator",
+
+      // Code & Developer Tools (Grab CodeBeautify/JSONFormatter crowd)
+      "json formatter", "json validator", "xml formatter", "html formatter",
+      "css formatter", "javascript formatter", "code beautifier", "minify code",
+      "json to xml", "xml to json", "yaml to json", "json to yaml",
+      "base64 encode", "base64 decode", "url encode", "url decode",
+      "hash generator", "md5 generator", "sha256 generator", "uuid generator",
+      "regex tester", "diff checker", "code diff", "text compare",
+
+      // Utilities & Productivity (Grab WordCounter/CalculatorSoup crowd)
+      "word counter", "character counter", "text editor online", "case converter",
+      "unit converter", "password generator", "random number generator",
+      "qr code generator", "barcode generator", "color picker", "hex to rgb",
+      "lorem ipsum generator", "text to speech", "speech to text",
+
+      // Fun & Viral Tools (Grab WheelOfNames crowd)
+      "yes or no wheel", "spin the wheel", "random name picker", "decision wheel",
+      "dice roller online", "coin toss online", "coin flip", "random picker",
+      "wheel of names", "name wheel", "random wheel", "picker wheel",
+      "truth or dare", "would you rather", "random generator",
+
+      // Competitor keywords (SEO meta only - grabs their traffic)
+      "ilovepdf", "smallpdf", "convertio", "zamzar", "cloudconvert",
+      "tinypng", "compressor.io", "remove.bg", "pdf24", "sejda",
+      "pdfcandy", "sodapdf", "foxit", "nitro pdf", "adobe acrobat alternative",
+      "online-convert", "freeconvert", "anyconv", "onlineconvertfree"
     ]
   },
 
@@ -100,14 +153,14 @@ export const tools: Tool[] = [
   { id: "40", name: "Reflection Prompts", category: "Productivity & Planning", description: "Daily reflection prompts", slug: "reflection-prompts", keywords: ["reflection", "prompts", "journal"] },
 
   // Finance & Calculators (41-80)
-  { id: "41", name: "Compound Interest", category: "Finance & Calculators", description: "Calculate compound interest", slug: "compound-interest", keywords: ["interest", "compound", "finance"] },
-  { id: "42", name: "Retirement", category: "Finance & Calculators", description: "Retirement savings calculator", slug: "retirement", keywords: ["retirement", "savings", "finance"] },
-  { id: "43", name: "Savings Goal", category: "Finance & Calculators", description: "Calculate time to reach savings goal", slug: "savings-goal", keywords: ["savings", "goal", "finance"] },
+  { id: "41", name: "Compound Interest", category: "Finance & Calculators", description: "Calculate compound interest on savings and investments with our free calculator", slug: "compound-interest", keywords: ["compound interest calculator", "interest calculator", "SIP calculator", "investment calculator", "compound interest online", "free finance calculator", "tool 260", "tool260", "best interest calculator", "monthly compound interest"] },
+  { id: "42", name: "Retirement", category: "Finance & Calculators", description: "Plan your retirement with our free retirement savings calculator", slug: "retirement", keywords: ["retirement calculator", "retirement savings", "pension calculator", "retirement planning", "how much to retire", "retirement fund calculator", "tool 260", "tool260", "free retirement calculator"] },
+  { id: "43", name: "Savings Goal", category: "Finance & Calculators", description: "Calculate how long to reach your savings goal with our free tool", slug: "savings-goal", keywords: ["savings goal calculator", "savings calculator", "money goal calculator", "how long to save", "savings target", "tool 260", "tool260", "free savings calculator"] },
   { id: "44", name: "Net Worth", category: "Finance & Calculators", description: "Calculate your net worth", slug: "net-worth", keywords: ["net", "worth", "finance"] },
   { id: "45", name: "Expense Splitter", category: "Finance & Calculators", description: "Split expenses with friends", slug: "expense-splitter", keywords: ["expense", "split", "bill"] },
   { id: "46", name: "Bill Splitter", category: "Finance & Calculators", description: "Split bills evenly or by percentage", slug: "bill-splitter", keywords: ["bill", "split", "calculator"] },
-  { id: "47", name: "Tip Calculator", category: "Finance & Calculators", description: "Calculate tip amount", slug: "tip-calculator", keywords: ["tip", "calculator", "restaurant"] },
-  { id: "48", name: "Salary Calculator", category: "Finance & Calculators", description: "Calculate salary breakdown", slug: "salary-calculator", keywords: ["salary", "calculator", "income"] },
+  { id: "47", name: "Tip Calculator", category: "Finance & Calculators", description: "Calculate tip amount and split bills easily - free tip calculator", slug: "tip-calculator", keywords: ["tip calculator", "tip calculator online", "restaurant tip calculator", "gratuity calculator", "how much to tip", "bill tip calculator", "tool 260", "tool260", "free tip calculator", "best tip calculator"] },
+  { id: "48", name: "Salary Calculator", category: "Finance & Calculators", description: "Calculate salary breakdown, take-home pay, and tax deductions", slug: "salary-calculator", keywords: ["salary calculator", "income tax calculator", "take home pay calculator", "net salary calculator", "gross to net salary", "paycheck calculator", "tool 260", "tool260", "free salary calculator"] },
   { id: "49", name: "Freelance Rate", category: "Finance & Calculators", description: "Calculate freelance hourly rate", slug: "freelance-rate", keywords: ["freelance", "rate", "calculator"] },
   { id: "50", name: "ROI", category: "Finance & Calculators", description: "Return on Investment calculator", slug: "roi", keywords: ["roi", "return", "investment"] },
   { id: "51", name: "Break-Even", category: "Finance & Calculators", description: "Calculate break-even point", slug: "break-even", keywords: ["break", "even", "business"] },
@@ -118,8 +171,8 @@ export const tools: Tool[] = [
   { id: "56", name: "VAT", category: "Finance & Calculators", description: "Calculate VAT amount", slug: "vat", keywords: ["vat", "tax", "calculator"] },
   { id: "57", name: "Crypto Profit", category: "Finance & Calculators", description: "Calculate cryptocurrency profit/loss", slug: "crypto-profit", keywords: ["crypto", "profit", "bitcoin"] },
   { id: "58", name: "Stock Tracker", category: "Finance & Calculators", description: "Track stock prices and gains", slug: "stock-tracker", keywords: ["stock", "tracker", "investing"] },
-  { id: "59", name: "Mortgage", category: "Finance & Calculators", description: "Calculate mortgage payments", slug: "mortgage", keywords: ["mortgage", "loan", "house"] },
-  { id: "60", name: "Car Loan", category: "Finance & Calculators", description: "Calculate car loan payments", slug: "car-loan", keywords: ["car", "loan", "auto"] },
+  { id: "59", name: "Mortgage", category: "Finance & Calculators", description: "Calculate monthly mortgage payments, interest, and amortization schedule - free EMI calculator", slug: "mortgage", keywords: ["mortgage calculator", "EMI calculator", "home loan calculator", "mortgage payment calculator", "house loan EMI", "mortgage EMI", "home loan EMI calculator", "loan calculator online", "tool 260", "tool260", "best EMI calculator", "free mortgage calculator"] },
+  { id: "60", name: "Car Loan", category: "Finance & Calculators", description: "Calculate car loan EMI, interest rates, and total cost - free auto loan calculator", slug: "car-loan", keywords: ["car loan calculator", "auto loan calculator", "car EMI calculator", "vehicle loan calculator", "car loan EMI", "auto EMI calculator", "car finance calculator", "tool 260", "tool260", "best car loan calculator"] },
   { id: "61", name: "Credit Card Payoff", category: "Finance & Calculators", description: "Calculate credit card payoff time", slug: "credit-card-payoff", keywords: ["credit", "card", "debt"] },
   { id: "62", name: "Debt Snowball", category: "Finance & Calculators", description: "Debt snowball calculator", slug: "debt-snowball", keywords: ["debt", "snowball", "payoff"] },
   { id: "63", name: "Emergency Fund", category: "Finance & Calculators", description: "Calculate emergency fund target", slug: "emergency-fund", keywords: ["emergency", "fund", "savings"] },
@@ -133,8 +186,8 @@ export const tools: Tool[] = [
   { id: "71", name: "House Affordability", category: "Finance & Calculators", description: "Calculate how much house you can afford", slug: "house-affordability", keywords: ["house", "affordability", "mortgage"] },
   { id: "72", name: "Refinance", category: "Finance & Calculators", description: "Mortgage refinance calculator", slug: "refinance", keywords: ["refinance", "mortgage", "loan"] },
   { id: "73", name: "Inflation", category: "Finance & Calculators", description: "Calculate inflation impact", slug: "inflation", keywords: ["inflation", "calculator", "money"] },
-  { id: "74", name: "Currency Converter", category: "Finance & Calculators", description: "Convert between currencies", slug: "currency-converter", keywords: ["currency", "converter", "exchange"] },
-  { id: "75", name: "Gold Price", category: "Finance & Calculators", description: "Check gold prices", slug: "gold-price", keywords: ["gold", "price", "precious"] },
+  { id: "74", name: "Currency Converter", category: "Finance & Calculators", description: "Convert between currencies with live exchange rates - free currency calculator", slug: "currency-converter", keywords: ["currency converter", "exchange rate calculator", "USD to INR", "EUR to USD", "currency exchange", "forex calculator", "money converter", "tool 260", "tool260", "free currency converter", "best currency converter"] },
+  { id: "75", name: "Gold Price", category: "Finance & Calculators", description: "Check live gold prices and calculate gold value", slug: "gold-price", keywords: ["gold price", "gold rate today", "gold calculator", "gold price per gram", "gold value calculator", "tool 260", "tool260", "live gold price"] },
   { id: "76", name: "Fuel Cost", category: "Finance & Calculators", description: "Calculate fuel cost for trip", slug: "fuel-cost", keywords: ["fuel", "cost", "trip"] },
   { id: "77", name: "Mileage Reimbursement", category: "Finance & Calculators", description: "Calculate mileage reimbursement", slug: "mileage-reimbursement", keywords: ["mileage", "reimbursement", "travel"] },
   { id: "78", name: "Overtime Pay", category: "Finance & Calculators", description: "Calculate overtime pay", slug: "overtime-pay", keywords: ["overtime", "pay", "wage"] },
@@ -277,11 +330,137 @@ export const tools: Tool[] = [
       }
     ]
   },
-  { id: "115", name: "Split PDF", category: "File Converters & Editors", description: "Split PDF into multiple files", slug: "split-pdf", keywords: ["split", "pdf", "divide"] },
-  { id: "116", name: "Compress PDF", category: "File Converters & Editors", description: "Reduce PDF file size", slug: "compress-pdf", keywords: ["compress", "pdf", "size"] },
-  { id: "117", name: "Rotate PDF", category: "File Converters & Editors", description: "Rotate PDF pages", slug: "rotate-pdf", keywords: ["rotate", "pdf", "pages"] },
-  { id: "118", name: "Watermark PDF", category: "File Converters & Editors", description: "Add watermark to PDF", slug: "watermark-pdf", keywords: ["watermark", "pdf", "add"] },
-  { id: "119", name: "Remove PDF Password", category: "File Converters & Editors", description: "Remove password from PDF", slug: "remove-pdf-password", keywords: ["remove", "password", "pdf"] },
+  {
+    id: "115",
+    name: "Split PDF",
+    category: "File Converters & Editors",
+    description: "Split PDF into multiple files or extract specific pages instantly",
+    slug: "split-pdf",
+    keywords: ["split pdf", "divide pdf", "pdf splitter", "separate pdf pages", "extract pdf pages", "split pdf online free", "pdf page extractor", "tool 260", "tool260", "ilovepdf", "smallpdf", "best pdf splitter", "free pdf divider"],
+    longDescription: "Need to break a large PDF into smaller documents? Our Split PDF tool lets you divide any PDF file into separate pages or custom page ranges. Perfect for extracting specific chapters from ebooks, splitting invoices, or sharing only relevant pages. All processing happens locally in your browser for maximum privacy and speed.",
+    howToSteps: [
+      "Upload your PDF file by clicking the upload area or drag and drop.",
+      "Choose how to split: by page ranges, every N pages, or extract specific pages.",
+      "Preview the split sections to ensure accuracy.",
+      "Click 'Split' and download your individual PDF files."
+    ],
+    features: [
+      "Multiple Split Modes: Split by range, extract pages, or divide evenly.",
+      "Local Processing: Your files never leave your device.",
+      "Batch Download: Get all split files in a single ZIP archive.",
+      "Preview Mode: See exactly what you'll get before splitting.",
+      "No File Limits: Split PDFs of any size."
+    ],
+    faqs: [
+      { question: "Can I split a PDF into individual pages?", answer: "Yes! Select 'Extract all pages' to create a separate PDF for each page." },
+      { question: "Is there a page limit?", answer: "No limits. Split PDFs with hundreds of pages without restrictions." }
+    ]
+  },
+  {
+    id: "116",
+    name: "Compress PDF",
+    category: "File Converters & Editors",
+    description: "Reduce PDF file size while maintaining quality - free online compressor",
+    slug: "compress-pdf",
+    keywords: ["compress pdf", "reduce pdf size", "pdf compressor", "shrink pdf", "make pdf smaller", "compress pdf online free", "pdf size reducer", "optimize pdf", "tool 260", "tool260", "ilovepdf compress", "smallpdf compress", "best pdf compressor", "free pdf compression"],
+    longDescription: "Large PDF files can be difficult to email or upload. Our Compress PDF tool reduces file sizes by up to 90% while preserving document quality. Whether you need to email a contract, upload documents to a website, or save storage space, this tool handles it instantly. Unlike cloud-based services, your files are processed locally for complete privacy.",
+    howToSteps: [
+      "Upload your PDF by dragging it into the upload area.",
+      "Select compression level: Low (best quality), Medium (balanced), or High (smallest size).",
+      "Click 'Compress' to start the optimization process.",
+      "Download your smaller PDF file instantly."
+    ],
+    features: [
+      "Smart Compression: Reduces size without visible quality loss.",
+      "Multiple Quality Levels: Choose the right balance for your needs.",
+      "Privacy Guaranteed: Files processed on your device, never uploaded.",
+      "Batch Compression: Compress multiple PDFs at once.",
+      "Size Preview: See the reduction before downloading."
+    ],
+    faqs: [
+      { question: "How much can I reduce the file size?", answer: "Typically 50-90% reduction depending on the PDF content and compression level selected." },
+      { question: "Will compression affect text quality?", answer: "No. Text remains sharp and readable. Only embedded images are optimized." }
+    ]
+  },
+  {
+    id: "117",
+    name: "Rotate PDF",
+    category: "File Converters & Editors",
+    description: "Rotate PDF pages 90°, 180° or custom angles - fix orientation instantly",
+    slug: "rotate-pdf",
+    keywords: ["rotate pdf", "rotate pdf pages", "pdf rotation", "flip pdf", "turn pdf", "rotate pdf online free", "fix pdf orientation", "tool 260", "tool260", "ilovepdf rotate", "smallpdf rotate", "pdf page rotator"],
+    longDescription: "Scanned documents often end up with incorrect orientation. Our Rotate PDF tool lets you rotate all pages or select specific pages to rotate by 90°, 180°, or 270°. Fix sideways or upside-down pages in seconds. Perfect for correcting scanned documents, receipts, and forms.",
+    howToSteps: [
+      "Upload your PDF document.",
+      "Select which pages to rotate (all or specific pages).",
+      "Choose rotation angle: 90° clockwise, 90° counter-clockwise, or 180°.",
+      "Click 'Rotate' and download the corrected PDF."
+    ],
+    features: [
+      "Selective Rotation: Rotate all pages or just specific ones.",
+      "Multiple Angles: 90°, 180°, 270° rotation options.",
+      "Visual Preview: See rotated pages before saving.",
+      "Batch Processing: Rotate multiple PDFs at once.",
+      "Local Processing: Complete privacy, no uploads."
+    ],
+    faqs: [
+      { question: "Can I rotate just one page in a multi-page PDF?", answer: "Yes! Select individual pages to rotate while keeping others unchanged." },
+      { question: "Does rotation affect PDF quality?", answer: "No. Rotation is lossless and doesn't affect document quality." }
+    ]
+  },
+  {
+    id: "118",
+    name: "Watermark PDF",
+    category: "File Converters & Editors",
+    description: "Add text or image watermarks to PDF documents for branding and protection",
+    slug: "watermark-pdf",
+    keywords: ["watermark pdf", "add watermark to pdf", "pdf watermark", "stamp pdf", "brand pdf", "watermark pdf online free", "pdf stamp tool", "tool 260", "tool260", "ilovepdf watermark", "smallpdf watermark"],
+    longDescription: "Protect your documents and establish brand identity by adding watermarks to your PDFs. Add text watermarks like 'CONFIDENTIAL', 'DRAFT', or your company name, or use image watermarks for logos. Customize position, opacity, size, and rotation for the perfect result.",
+    howToSteps: [
+      "Upload your PDF file.",
+      "Choose watermark type: text or image.",
+      "Customize appearance: font, size, color, position, and opacity.",
+      "Preview the watermark and apply to all pages or selected pages.",
+      "Download your watermarked PDF."
+    ],
+    features: [
+      "Text & Image Watermarks: Use custom text or upload your logo.",
+      "Full Customization: Control size, position, rotation, and opacity.",
+      "Page Selection: Apply to all pages or specific page ranges.",
+      "Layer Control: Place watermark above or below content.",
+      "Local Processing: Your documents stay private."
+    ],
+    faqs: [
+      { question: "Can I add my company logo as a watermark?", answer: "Yes! Upload any PNG, JPG, or SVG image to use as a watermark." },
+      { question: "Will the watermark be on every page?", answer: "You can choose to apply it to all pages or select specific pages." }
+    ]
+  },
+  {
+    id: "119",
+    name: "Remove PDF Password",
+    category: "File Converters & Editors",
+    description: "Unlock password-protected PDFs and remove restrictions - free online tool",
+    slug: "remove-pdf-password",
+    keywords: ["remove pdf password", "unlock pdf", "pdf password remover", "decrypt pdf", "unprotect pdf", "remove pdf restrictions", "unlock pdf online free", "tool 260", "tool260", "ilovepdf unlock", "smallpdf unlock", "pdf unlocker"],
+    longDescription: "Forgot your PDF password or received a protected document you need to edit? Our Remove PDF Password tool unlocks password-protected PDFs instantly. Simply enter the password (if you know it) to remove protection and save an unlocked copy. All processing happens locally for your security.",
+    howToSteps: [
+      "Upload your password-protected PDF.",
+      "Enter the document password when prompted.",
+      "Click 'Unlock' to remove the password protection.",
+      "Download the unlocked PDF file."
+    ],
+    features: [
+      "Instant Unlock: Remove password protection in seconds.",
+      "Local Processing: Your password and files never leave your device.",
+      "Permission Removal: Also removes editing and printing restrictions.",
+      "Original Quality: Unlocked PDF maintains full quality.",
+      "Batch Support: Unlock multiple PDFs at once."
+    ],
+    faqs: [
+      { question: "Can I unlock a PDF without knowing the password?", answer: "No. You must know the password to unlock the document. This tool removes protection after authentication." },
+      { question: "Is this legal?", answer: "Yes, when used on documents you own or have permission to unlock. This tool is for legitimate use only." }
+    ]
+  },
   { id: "120", name: "Markdown Editor", category: "Text & Code Tools", description: "Write and preview Markdown", slug: "markdown-editor", keywords: ["markdown", "editor", "preview", "live markdown", "online editor", "tool260"] },
 
   { id: "138", name: "JSON Minifier", category: "Text & Code Tools", description: "Minify JSON code", slug: "json-minifier", keywords: ["json", "minify", "compress"] },
@@ -382,9 +561,9 @@ export const tools: Tool[] = [
   { id: "185", name: "HTML Formatter", category: "Text & Code Tools", description: "Format HTML code", slug: "html-formatter", keywords: ["html", "formatter", "format"] },
   { id: "186", name: "JavaScript Formatter", category: "Text & Code Tools", description: "Format JavaScript code", slug: "javascript-formatter", keywords: ["javascript", "formatter", "format"] },
   { id: "187", name: "Python Formatter", category: "Text & Code Tools", description: "Format Python code", slug: "python-formatter", keywords: ["python", "formatter", "format"] },
-  { id: "188", name: "Text Diff", category: "Text & Code Tools", description: "Compare two texts", slug: "text-diff", keywords: ["diff", "compare", "text"] },
-  { id: "189", name: "Word Counter", category: "Text & Code Tools", description: "Count words, characters, paragraphs", slug: "word-counter", keywords: ["word", "counter", "count"] },
-  { id: "190", name: "Case Converter", category: "Text & Code Tools", description: "Convert text case", slug: "case-converter", keywords: ["case", "convert", "text"] },
+  { id: "188", name: "Text Diff", category: "Text & Code Tools", description: "Compare two texts side by side - free online diff checker", slug: "text-diff", keywords: ["diff", "compare", "text", "text diff", "compare text", "diff checker", "text compare online", "tool 260", "tool260"] },
+  { id: "189", name: "Word Counter", category: "Text & Code Tools", description: "Count words, characters, sentences and paragraphs instantly - free online", slug: "word-counter", keywords: ["word counter", "character counter", "word count", "count words online", "letter counter", "text counter", "line counter", "sentence counter", "tool 260", "tool260", "free word counter"] },
+  { id: "190", name: "Case Converter", category: "Text & Code Tools", description: "Convert text to uppercase, lowercase, title case and more - free online", slug: "case-converter", keywords: ["case converter", "uppercase converter", "lowercase converter", "title case", "text case converter", "change text case", "tool 260", "tool260", "free case converter"] },
   { id: "191", name: "Text Reverser", category: "Text & Code Tools", description: "Reverse text", slug: "text-reverser", keywords: ["reverse", "text", "flip"] },
   { id: "192", name: "Lorem Ipsum Generator", category: "Text & Code Tools", description: "Generate placeholder text", slug: "lorem-ipsum-generator", keywords: ["lorem", "ipsum", "placeholder"] },
   { id: "193", name: "Password Generator", category: "Text & Code Tools", description: "Generate secure passwords", slug: "password-generator", keywords: ["password", "generator", "secure"], affiliateLinks: [{ name: "NordVPN", url: "https://nordvpn.com", description: "Secure VPN service" }, { name: "1Password", url: "https://1password.com", description: "Password manager" }] },
@@ -440,8 +619,8 @@ export const tools: Tool[] = [
   { id: "210", name: "Color Picker", category: "Image & Design Tools", description: "Pick colors from images or generate color codes", slug: "color-picker", keywords: ["color", "picker", "hex", "rgb"] },
 
   // Fun & Entertainment (211-240)
-  { id: "211", name: "Yes/No Wheel", category: "Fun & Entertainment", description: "Spin the yes/no wheel", slug: "yes-no-wheel", keywords: ["yes", "no", "wheel"] },
-  { id: "212", name: "Random Number Wheel", category: "Fun & Entertainment", description: "Random number generator wheel", slug: "random-number-wheel", keywords: ["random", "number", "wheel"] },
+  { id: "211", name: "Yes/No Wheel", category: "Fun & Entertainment", description: "Spin the yes/no wheel for quick decisions - free online decision maker", slug: "yes-no-wheel", keywords: ["yes or no wheel", "yes no wheel", "decision wheel", "decision wheel online", "spin the wheel", "random yes no", "yes or no generator", "decision maker online", "tool 260", "tool260", "free decision wheel"] },
+  { id: "212", name: "Random Number Wheel", category: "Fun & Entertainment", description: "Spin the wheel to get random numbers - free random number generator", slug: "random-number-wheel", keywords: ["random number wheel", "random number generator", "spin the wheel", "random wheel", "number picker", "tool 260", "tool260"] },
   { id: "213", name: "Coin Flipper", category: "Fun & Entertainment", description: "Flip a coin", slug: "coin-flipper", keywords: ["coin", "flip", "random"] },
   { id: "214", name: "Dice Roller", category: "Fun & Entertainment", description: "Roll dice", slug: "dice-roller", keywords: ["dice", "roll", "random"] },
   { id: "215", name: "Name Picker", category: "Fun & Entertainment", description: "Pick a random name", slug: "name-picker", keywords: ["name", "picker", "random"] },
@@ -484,14 +663,14 @@ export const tools: Tool[] = [
   { id: "250", name: "Neumorphism", category: "Generators & Makers", description: "Neumorphism CSS generator", slug: "neumorphism", keywords: ["neumorphism", "css", "generator"] },
 
   // Web & SEO Tools (251-260)
-  { id: "251", name: "Flexbox Playground", category: "Web & SEO Tools", description: "CSS Flexbox playground", slug: "flexbox-playground", keywords: ["flexbox", "css", "playground"] },
-  { id: "252", name: "Grid Playground", category: "Web & SEO Tools", description: "CSS Grid playground", slug: "grid-playground", keywords: ["grid", "css", "playground"] },
-  { id: "253", name: "Responsive Tester", category: "Web & SEO Tools", description: "Test responsive designs", slug: "responsive-tester", keywords: ["responsive", "tester", "design"] },
-  { id: "254", name: "OpenGraph Generator", category: "Web & SEO Tools", description: "Generate OpenGraph tags", slug: "opengraph-generator", keywords: ["opengraph", "generator", "seo"] },
-  { id: "255", name: "Meta Tag Generator", category: "Web & SEO Tools", description: "Generate meta tags", slug: "meta-tag-generator", keywords: ["meta", "tag", "seo"] },
-  { id: "256", name: "Robots.txt", category: "Web & SEO Tools", description: "Generate robots.txt", slug: "robots-txt", keywords: ["robots", "txt", "seo"] },
-  { id: "257", name: "Sitemap.xml", category: "Web & SEO Tools", description: "Generate sitemap.xml", slug: "sitemap-xml", keywords: ["sitemap", "xml", "seo"] },
-  { id: "258", name: "Password Strength", category: "Web & SEO Tools", description: "Check password strength", slug: "password-strength", keywords: ["password", "strength", "check"] },
+  { id: "251", name: "Flexbox Playground", category: "Web & SEO Tools", description: "Interactive CSS Flexbox playground - learn and experiment with flexbox layouts", slug: "flexbox-playground", keywords: ["flexbox playground", "css flexbox", "flexbox generator", "flexbox tutorial", "learn flexbox", "css layout", "tool 260", "tool260", "free flexbox tool"] },
+  { id: "252", name: "Grid Playground", category: "Web & SEO Tools", description: "Interactive CSS Grid playground - create grid layouts visually", slug: "grid-playground", keywords: ["css grid playground", "grid generator", "css grid tutorial", "learn css grid", "grid layout generator", "tool 260", "tool260", "free grid tool"] },
+  { id: "253", name: "Responsive Tester", category: "Web & SEO Tools", description: "Test website responsiveness across different screen sizes and devices", slug: "responsive-tester", keywords: ["responsive tester", "responsive design checker", "mobile friendly test", "website preview", "screen size tester", "tool 260", "tool260", "free responsive test"] },
+  { id: "254", name: "OpenGraph Generator", category: "Web & SEO Tools", description: "Generate OpenGraph meta tags for better social media sharing - free SEO tool", slug: "opengraph-generator", keywords: ["opengraph generator", "og tag generator", "social media meta tags", "facebook share preview", "twitter card generator", "SEO tool", "tool 260", "tool260", "free og generator"] },
+  { id: "255", name: "Meta Tag Generator", category: "Web & SEO Tools", description: "Generate SEO-optimized meta tags for your website - free meta tag tool", slug: "meta-tag-generator", keywords: ["meta tag generator", "SEO meta tags", "meta description generator", "title tag generator", "SEO tool free", "website meta tags", "tool 260", "tool260", "best meta generator"] },
+  { id: "256", name: "Robots.txt Generator", category: "Web & SEO Tools", description: "Generate robots.txt file for your website - control search engine crawling", slug: "robots-txt", keywords: ["robots.txt generator", "robots txt creator", "SEO robots file", "search engine crawler", "block search engines", "tool 260", "tool260", "free robots.txt tool"] },
+  { id: "257", name: "Sitemap Generator", category: "Web & SEO Tools", description: "Generate XML sitemap for your website - improve search engine indexing", slug: "sitemap-xml", keywords: ["sitemap generator", "xml sitemap creator", "sitemap.xml generator", "SEO sitemap", "website sitemap", "tool 260", "tool260", "free sitemap generator"] },
+  { id: "258", name: "Password Strength Checker", category: "Web & SEO Tools", description: "Check how strong your password is against hackers", slug: "password-strength", keywords: ["password strength checker", "password tester", "how strong is my password", "password security", "tool 260", "tool260", "free password checker"] },
   { id: "259", name: "Regex Tester SEO", category: "Web & SEO Tools", description: "Test regular expressions", slug: "regex-tester-seo", keywords: ["regex", "tester", "pattern"] },
 
 
