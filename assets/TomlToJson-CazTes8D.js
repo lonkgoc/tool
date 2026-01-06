@@ -1,0 +1,1 @@
+import{j as o}from"./index-CdSeFEFI.js";import{D as t}from"./DataConverter-BcXmkbzY.js";import"./arrow-right-left-CQlNJDVX.js";import"./alert-circle-DPGV9S2M.js";import"./check-BnOKASRO.js";import"./copy-DDBE95C9.js";import"./download-BdlF2-vd.js";function n(){return o.jsx(t,{initialMode:"toml-json",hideTabs:!0})}export{n as default};

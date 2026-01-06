@@ -1,0 +1,1 @@
+import{j as r}from"./index-CdSeFEFI.js";import{A as o}from"./ArchiveTools-BJxhmR0m.js";import"./jszip.min-D-ISJ2CG.js";import"./file-text-Dw9Reos-.js";import"./alert-circle-DPGV9S2M.js";import"./download-BdlF2-vd.js";import"./check-BnOKASRO.js";function n(){return r.jsx(o,{initialOp:"compare",hideTabs:!0})}export{n as default};

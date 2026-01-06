@@ -1,0 +1,1 @@
+import{j as r}from"./index-CdSeFEFI.js";import{I as i}from"./ImageTools-BqU3Q85G.js";import"./alert-circle-DPGV9S2M.js";import"./upload-Cc9bDq14.js";import"./download-BdlF2-vd.js";function a(){return r.jsx(i,{initialOp:"resize",hideTabs:!0})}export{a as default};
