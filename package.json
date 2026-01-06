@@ -6,7 +6,7 @@
   "homepage": "https://tool260.com",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npm run generate-sitemap && copy dist\\index.html dist\\404.html",
+    "build": "tsc && npm run generate-sitemap && vite build && node scripts/generate-static-pages.js && copy dist\\index.html dist\\404.html",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "generate-sitemap": "node scripts/generate-sitemap.js",
