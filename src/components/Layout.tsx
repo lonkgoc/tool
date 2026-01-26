@@ -27,8 +27,8 @@ export default function Layout({ children, showBreadcrumb = false, toolName, cat
           can be centered within its column. */}
       <div
         className={`grid grid-cols-1 flex-1 pt-16 transition-all duration-300 ${isOpen
-            ? 'lg:grid-cols-[16rem_1fr] xl:grid-cols-[16rem_1fr_20rem]'
-            : 'lg:grid-cols-[0_1fr] xl:grid-cols-[0_1fr_20rem]'
+          ? 'lg:grid-cols-[16rem_1fr] xl:grid-cols-[16rem_1fr_20rem]'
+          : 'lg:grid-cols-[0_1fr] xl:grid-cols-[0_1fr_20rem]'
           }`}
       >
         <Sidebar />
